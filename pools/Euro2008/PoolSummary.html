@@ -1,0 +1,898 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Euro 2008 Pool</title>
+    <script src="pool.js" type="text/javascript"></script>
+    <style type="text/css">@import url('pool2008.css');</style>
+    <link href="soccer.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="soccer_16x16.gif" rel="icon" type="image/gif">
+  </head>
+  <body id="summarypage">
+    <div class="header" id="header">
+      <div>Pool Summary</div>
+      <div class="subhead">
+        <a href="Euro2008.html">Pool Standings</a>
+      </div>
+      <div class="subhead">
+        <a href="MatchResults.html">Match Results</a>
+      </div>
+      <div class="subhead">
+        <a href="GroupStandings.html">Group Standings</a>
+      </div>
+      <div class="subhead">
+        <a href="PoolSummary.html">Pool Summary</a>
+      </div>
+    </div>
+    <div class="poolstandings" id="summary">
+      <table cellspacing="0">
+        <tr>
+          <td class="header" colspan="9">Teams</td>
+        </tr>
+        <tr>
+          <td class="teamheader">Team</td><td class="pointheader">Pi</td><td class="pointheader">MP</td><td class="pointheader">W</td><td class="pointheader">D</td><td class="pointheader">L</td><td class="pointheader">GF</td><td class="pointheader">GA</td><td class="pointheader">PP</td>
+        </tr>
+        <tr class="odd">
+          <td><a onclick="display('p1')">Austria</a></td><td class="points">0</td><td class="points">3</td><td class="points">0</td><td class="points">1</td><td class="points">2</td><td class="points">1</td><td class="points">3</td><td class="points">2</td>
+        </tr>
+        <tr>
+          <td><a onclick="display('p2')">Croatia</a></td><td class="points">32</td><td class="points">4</td><td class="points">3</td><td class="points">0</td><td class="points">1</td><td class="points">5</td><td class="points">2</td><td class="points">14</td>
+        </tr>
+        <tr class="odd">
+          <td><a onclick="display('p3')">Czech Republic</a></td><td class="points">7</td><td class="points">3</td><td class="points">1</td><td class="points">0</td><td class="points">2</td><td class="points">4</td><td class="points">6</td><td class="points">7</td>
+        </tr>
+        <tr>
+          <td><a onclick="display('p4')">France</a></td><td class="points">10</td><td class="points">3</td><td class="points">0</td><td class="points">1</td><td class="points">2</td><td class="points">1</td><td class="points">6</td><td class="points">2</td>
+        </tr>
+        <tr class="odd">
+          <td><a onclick="display('p5')">Germany</a></td><td class="points">26</td><td class="points">6</td><td class="points">4</td><td class="points">0</td><td class="points">2</td><td class="points">10</td><td class="points">7</td><td class="points">22</td>
+        </tr>
+        <tr>
+          <td><a onclick="display('p6')">Greece</a></td><td class="points">1</td><td class="points">3</td><td class="points">0</td><td class="points">0</td><td class="points">3</td><td class="points">1</td><td class="points">5</td><td class="points">1</td>
+        </tr>
+        <tr class="odd">
+          <td><a onclick="display('p7')">Italy</a></td><td class="points">27</td><td class="points">4</td><td class="points">1</td><td class="points">1</td><td class="points">2</td><td class="points">3</td><td class="points">4</td><td class="points">7</td>
+        </tr>
+        <tr>
+          <td><a onclick="display('p8')">Netherlands</a></td><td class="points">4</td><td class="points">4</td><td class="points">3</td><td class="points">0</td><td class="points">1</td><td class="points">10</td><td class="points">4</td><td class="points">19</td>
+        </tr>
+        <tr class="odd">
+          <td><a onclick="display('p9')">Poland</a></td><td class="points">6</td><td class="points">3</td><td class="points">0</td><td class="points">1</td><td class="points">2</td><td class="points">1</td><td class="points">4</td><td class="points">2</td>
+        </tr>
+        <tr>
+          <td><a onclick="display('p10')">Portugal</a></td><td class="points">19</td><td class="points">4</td><td class="points">2</td><td class="points">0</td><td class="points">2</td><td class="points">7</td><td class="points">6</td><td class="points">13</td>
+        </tr>
+        <tr class="odd">
+          <td><a onclick="display('p11')">Romania</a></td><td class="points">13</td><td class="points">3</td><td class="points">0</td><td class="points">2</td><td class="points">1</td><td class="points">1</td><td class="points">3</td><td class="points">3</td>
+        </tr>
+        <tr>
+          <td><a onclick="display('p12')">Russia</a></td><td class="points">18</td><td class="points">5</td><td class="points">3</td><td class="points">0</td><td class="points">2</td><td class="points">7</td><td class="points">8</td><td class="points">16</td>
+        </tr>
+        <tr class="odd">
+          <td><a onclick="display('p13')">Spain</a></td><td class="points">17</td><td class="points">6</td><td class="points">6</td><td class="points">0</td><td class="points">0</td><td class="points">12</td><td class="points">3</td><td class="points">30</td>
+        </tr>
+        <tr>
+          <td><a onclick="display('p14')">Sweden</a></td><td class="points">25</td><td class="points">3</td><td class="points">1</td><td class="points">0</td><td class="points">2</td><td class="points">3</td><td class="points">4</td><td class="points">6</td>
+        </tr>
+        <tr class="odd">
+          <td><a onclick="display('p15')">Switzerland</a></td><td class="points">4</td><td class="points">3</td><td class="points">1</td><td class="points">0</td><td class="points">2</td><td class="points">3</td><td class="points">3</td><td class="points">6</td>
+        </tr>
+        <tr>
+          <td><a onclick="display('p16')">Turkey</a></td><td class="points">13</td><td class="points">5</td><td class="points">3</td><td class="points">0</td><td class="points">2</td><td class="points">8</td><td class="points">9</td><td class="points">17</td>
+        </tr>
+      </table>
+    </div>
+    <div class="poolteam" id="p0">
+      <table>
+        <tr>
+          <td>Legend</td>
+        </tr>
+        <tr>
+          <td>Pi - Number of times picked</td>
+        </tr>
+        <tr>
+          <td>MP - Matches Played</td>
+        </tr>
+        <tr>
+          <td>W - Wins</td>
+        </tr>
+        <tr>
+          <td>D - Draws</td>
+        </tr>
+        <tr>
+          <td>L - Losses</td>
+        </tr>
+        <tr>
+          <td>GF - Goals For</td>
+        </tr>
+        <tr>
+          <td>GA - Goals Against</td>
+        </tr>
+        <tr>
+          <td>PP - Pool Points</td>
+        </tr>
+        <tr>
+          <td>Click on a team to see who picked it</td>
+        </tr>
+      </table>
+    </div>
+    <div class="poolteam" id="p1">
+      <table cellspacing="0" class="pickers">
+        <tr>
+          <td class="header">Austria</td>
+        </tr>
+      </table>
+    </div>
+    <div class="poolteam" id="p2">
+      <table cellspacing="0" class="pickers">
+        <tr>
+          <td class="header">Croatia</td>
+        </tr>
+        <tr class="odd">
+          <td>Aaron De Boer</td>
+        </tr>
+        <tr>
+          <td>Alex Manzi</td>
+        </tr>
+        <tr class="odd">
+          <td>Alnoor Gangji</td>
+        </tr>
+        <tr>
+          <td>Angelo Rizzuti</td>
+        </tr>
+        <tr class="odd">
+          <td>Bob Wagstaff</td>
+        </tr>
+        <tr>
+          <td>Brent Mayenburg</td>
+        </tr>
+        <tr class="odd">
+          <td>Danny Ciarniello</td>
+        </tr>
+        <tr>
+          <td>Derek Brady</td>
+        </tr>
+        <tr class="odd">
+          <td>Domenic Cimaglia</td>
+        </tr>
+        <tr>
+          <td>Elvio Chies</td>
+        </tr>
+        <tr class="odd">
+          <td>Emil Udovich</td>
+        </tr>
+        <tr>
+          <td>Erminia Ciarniello</td>
+        </tr>
+        <tr class="odd">
+          <td>Frank Andriani</td>
+        </tr>
+        <tr>
+          <td>Frank Rizzuti</td>
+        </tr>
+        <tr class="odd">
+          <td>Greg Janelle</td>
+        </tr>
+        <tr>
+          <td>Henry Deng</td>
+        </tr>
+        <tr class="odd">
+          <td>Jim Maunders</td>
+        </tr>
+        <tr>
+          <td>John Fong</td>
+        </tr>
+        <tr class="odd">
+          <td>John Rizzuti</td>
+        </tr>
+        <tr>
+          <td>Kenzo Oka</td>
+        </tr>
+        <tr class="odd">
+          <td>Lisa Maunders</td>
+        </tr>
+        <tr>
+          <td>Lloyd &amp; Gina Hansen</td>
+        </tr>
+        <tr class="odd">
+          <td>Mike Togyi</td>
+        </tr>
+        <tr>
+          <td>Nilesh Tailor</td>
+        </tr>
+        <tr class="odd">
+          <td>Paul McDermott</td>
+        </tr>
+        <tr>
+          <td>Paula Brady</td>
+        </tr>
+        <tr class="odd">
+          <td>Phil Archer</td>
+        </tr>
+        <tr>
+          <td>Phil Dubois</td>
+        </tr>
+        <tr class="odd">
+          <td>Stuart Maunders</td>
+        </tr>
+        <tr>
+          <td>THE SCOUSER Tony Ungi</td>
+        </tr>
+        <tr class="odd">
+          <td>Tatiana Voiniciuc</td>
+        </tr>
+        <tr>
+          <td>William Lockett</td>
+        </tr>
+      </table>
+    </div>
+    <div class="poolteam" id="p3">
+      <table cellspacing="0" class="pickers">
+        <tr>
+          <td class="header">Czech Republic</td>
+        </tr>
+        <tr class="odd">
+          <td>Alnoor Gangji</td>
+        </tr>
+        <tr>
+          <td>Brent Mayenburg</td>
+        </tr>
+        <tr class="odd">
+          <td>Frank Andriani</td>
+        </tr>
+        <tr>
+          <td>Lisa Maunders</td>
+        </tr>
+        <tr class="odd">
+          <td>Lloyd &amp; Gina Hansen</td>
+        </tr>
+        <tr>
+          <td>Stuart Maunders</td>
+        </tr>
+        <tr class="odd">
+          <td>Sue Archer</td>
+        </tr>
+      </table>
+    </div>
+    <div class="poolteam" id="p4">
+      <table cellspacing="0" class="pickers">
+        <tr>
+          <td class="header">France</td>
+        </tr>
+        <tr class="odd">
+          <td>Alnoor Gangji</td>
+        </tr>
+        <tr>
+          <td>Angelo Rizzuti</td>
+        </tr>
+        <tr class="odd">
+          <td>Emil Udovich</td>
+        </tr>
+        <tr>
+          <td>Greg Janelle</td>
+        </tr>
+        <tr class="odd">
+          <td>Paula Brady</td>
+        </tr>
+        <tr>
+          <td>Phil Archer</td>
+        </tr>
+        <tr class="odd">
+          <td>Phil Dubois</td>
+        </tr>
+        <tr>
+          <td>THE SCOUSER Tony Ungi</td>
+        </tr>
+        <tr class="odd">
+          <td>Tatiana Voiniciuc</td>
+        </tr>
+        <tr>
+          <td>William Lockett</td>
+        </tr>
+      </table>
+    </div>
+    <div class="poolteam" id="p5">
+      <table cellspacing="0" class="pickers">
+        <tr>
+          <td class="header">Germany</td>
+        </tr>
+        <tr class="odd">
+          <td>Aaron De Boer</td>
+        </tr>
+        <tr>
+          <td>Alex Manzi</td>
+        </tr>
+        <tr class="odd">
+          <td>Antonella Hansen</td>
+        </tr>
+        <tr>
+          <td>Brent Mayenburg</td>
+        </tr>
+        <tr class="odd">
+          <td>Danny Ciarniello</td>
+        </tr>
+        <tr>
+          <td>Derek Brady</td>
+        </tr>
+        <tr class="odd">
+          <td>Domenic Cimaglia</td>
+        </tr>
+        <tr>
+          <td>Edward Fan</td>
+        </tr>
+        <tr class="odd">
+          <td>Elvio Chies</td>
+        </tr>
+        <tr>
+          <td>Emil Udovich</td>
+        </tr>
+        <tr class="odd">
+          <td>Frank Andriani</td>
+        </tr>
+        <tr>
+          <td>Frank Rizzuti</td>
+        </tr>
+        <tr class="odd">
+          <td>Henry Deng</td>
+        </tr>
+        <tr>
+          <td>Hiroko Yoshida</td>
+        </tr>
+        <tr class="odd">
+          <td>Jim Maunders</td>
+        </tr>
+        <tr>
+          <td>John Fong</td>
+        </tr>
+        <tr class="odd">
+          <td>John Rizzuti</td>
+        </tr>
+        <tr>
+          <td>Kenzo Oka</td>
+        </tr>
+        <tr class="odd">
+          <td>Lisa Maunders</td>
+        </tr>
+        <tr>
+          <td>Mike Togyi</td>
+        </tr>
+        <tr class="odd">
+          <td>Nilesh Tailor</td>
+        </tr>
+        <tr>
+          <td>Paul McDermott</td>
+        </tr>
+        <tr class="odd">
+          <td>Phil Archer</td>
+        </tr>
+        <tr>
+          <td>Phil Dubois</td>
+        </tr>
+        <tr class="odd">
+          <td>THE SCOUSER Tony Ungi</td>
+        </tr>
+        <tr>
+          <td>Tatiana Voiniciuc</td>
+        </tr>
+      </table>
+    </div>
+    <div class="poolteam" id="p6">
+      <table cellspacing="0" class="pickers">
+        <tr>
+          <td class="header">Greece</td>
+        </tr>
+        <tr class="odd">
+          <td>Angela Maunders</td>
+        </tr>
+      </table>
+    </div>
+    <div class="poolteam" id="p7">
+      <table cellspacing="0" class="pickers">
+        <tr>
+          <td class="header">Italy</td>
+        </tr>
+        <tr class="odd">
+          <td>Aaron De Boer</td>
+        </tr>
+        <tr>
+          <td>Alex Manzi</td>
+        </tr>
+        <tr class="odd">
+          <td>Alnoor Gangji</td>
+        </tr>
+        <tr>
+          <td>Angela Maunders</td>
+        </tr>
+        <tr class="odd">
+          <td>Angelo Rizzuti</td>
+        </tr>
+        <tr>
+          <td>Antonella Hansen</td>
+        </tr>
+        <tr class="odd">
+          <td>Bob Wagstaff</td>
+        </tr>
+        <tr>
+          <td>Danny Ciarniello</td>
+        </tr>
+        <tr class="odd">
+          <td>Derek Brady</td>
+        </tr>
+        <tr>
+          <td>Domenic Cimaglia</td>
+        </tr>
+        <tr class="odd">
+          <td>Edward Fan</td>
+        </tr>
+        <tr>
+          <td>Emil Udovich</td>
+        </tr>
+        <tr class="odd">
+          <td>Erminia Ciarniello</td>
+        </tr>
+        <tr>
+          <td>Frank Andriani</td>
+        </tr>
+        <tr class="odd">
+          <td>Frank Rizzuti</td>
+        </tr>
+        <tr>
+          <td>Greg Janelle</td>
+        </tr>
+        <tr class="odd">
+          <td>Henry Deng</td>
+        </tr>
+        <tr>
+          <td>Hiroko Yoshida</td>
+        </tr>
+        <tr class="odd">
+          <td>John Rizzuti</td>
+        </tr>
+        <tr>
+          <td>Lisa Maunders</td>
+        </tr>
+        <tr class="odd">
+          <td>Lloyd &amp; Gina Hansen</td>
+        </tr>
+        <tr>
+          <td>Nilesh Tailor</td>
+        </tr>
+        <tr class="odd">
+          <td>Phil Archer</td>
+        </tr>
+        <tr>
+          <td>Phil Dubois</td>
+        </tr>
+        <tr class="odd">
+          <td>Stuart Maunders</td>
+        </tr>
+        <tr>
+          <td>Sue Archer</td>
+        </tr>
+        <tr class="odd">
+          <td>THE SCOUSER Tony Ungi</td>
+        </tr>
+      </table>
+    </div>
+    <div class="poolteam" id="p8">
+      <table cellspacing="0" class="pickers">
+        <tr>
+          <td class="header">Netherlands</td>
+        </tr>
+        <tr class="odd">
+          <td>Aaron De Boer</td>
+        </tr>
+        <tr>
+          <td>Bob Wagstaff</td>
+        </tr>
+        <tr class="odd">
+          <td>Domenic Cimaglia</td>
+        </tr>
+        <tr>
+          <td>Paula Brady</td>
+        </tr>
+      </table>
+    </div>
+    <div class="poolteam" id="p9">
+      <table cellspacing="0" class="pickers">
+        <tr>
+          <td class="header">Poland</td>
+        </tr>
+        <tr class="odd">
+          <td>Angela Maunders</td>
+        </tr>
+        <tr>
+          <td>Antonella Hansen</td>
+        </tr>
+        <tr class="odd">
+          <td>Frank Rizzuti</td>
+        </tr>
+        <tr>
+          <td>Lloyd &amp; Gina Hansen</td>
+        </tr>
+        <tr class="odd">
+          <td>Sue Archer</td>
+        </tr>
+        <tr>
+          <td>THE SCOUSER Tony Ungi</td>
+        </tr>
+      </table>
+    </div>
+    <div class="poolteam" id="p10">
+      <table cellspacing="0" class="pickers">
+        <tr>
+          <td class="header">Portugal</td>
+        </tr>
+        <tr class="odd">
+          <td>Angela Maunders</td>
+        </tr>
+        <tr>
+          <td>Angelo Rizzuti</td>
+        </tr>
+        <tr class="odd">
+          <td>Bob Wagstaff</td>
+        </tr>
+        <tr>
+          <td>Danny Ciarniello</td>
+        </tr>
+        <tr class="odd">
+          <td>Derek Brady</td>
+        </tr>
+        <tr>
+          <td>Elvio Chies</td>
+        </tr>
+        <tr class="odd">
+          <td>Erminia Ciarniello</td>
+        </tr>
+        <tr>
+          <td>Frank Rizzuti</td>
+        </tr>
+        <tr class="odd">
+          <td>Greg Janelle</td>
+        </tr>
+        <tr>
+          <td>Hiroko Yoshida</td>
+        </tr>
+        <tr class="odd">
+          <td>Jim Maunders</td>
+        </tr>
+        <tr>
+          <td>John Fong</td>
+        </tr>
+        <tr class="odd">
+          <td>Kenzo Oka</td>
+        </tr>
+        <tr>
+          <td>Lloyd &amp; Gina Hansen</td>
+        </tr>
+        <tr class="odd">
+          <td>Mike Togyi</td>
+        </tr>
+        <tr>
+          <td>Nilesh Tailor</td>
+        </tr>
+        <tr class="odd">
+          <td>Paul McDermott</td>
+        </tr>
+        <tr>
+          <td>Stuart Maunders</td>
+        </tr>
+        <tr class="odd">
+          <td>William Lockett</td>
+        </tr>
+      </table>
+    </div>
+    <div class="poolteam" id="p11">
+      <table cellspacing="0" class="pickers">
+        <tr>
+          <td class="header">Romania</td>
+        </tr>
+        <tr class="odd">
+          <td>Angela Maunders</td>
+        </tr>
+        <tr>
+          <td>Bob Wagstaff</td>
+        </tr>
+        <tr class="odd">
+          <td>Danny Ciarniello</td>
+        </tr>
+        <tr>
+          <td>Frank Andriani</td>
+        </tr>
+        <tr class="odd">
+          <td>Greg Janelle</td>
+        </tr>
+        <tr>
+          <td>Hiroko Yoshida</td>
+        </tr>
+        <tr class="odd">
+          <td>Jim Maunders</td>
+        </tr>
+        <tr>
+          <td>Kenzo Oka</td>
+        </tr>
+        <tr class="odd">
+          <td>Mike Togyi</td>
+        </tr>
+        <tr>
+          <td>Nilesh Tailor</td>
+        </tr>
+        <tr class="odd">
+          <td>Stuart Maunders</td>
+        </tr>
+        <tr>
+          <td>Sue Archer</td>
+        </tr>
+        <tr class="odd">
+          <td>Tatiana Voiniciuc</td>
+        </tr>
+      </table>
+    </div>
+    <div class="poolteam" id="p12">
+      <table cellspacing="0" class="pickers">
+        <tr>
+          <td class="header">Russia</td>
+        </tr>
+        <tr class="odd">
+          <td>Aaron De Boer</td>
+        </tr>
+        <tr>
+          <td>Alex Manzi</td>
+        </tr>
+        <tr class="odd">
+          <td>Alnoor Gangji</td>
+        </tr>
+        <tr>
+          <td>Angela Maunders</td>
+        </tr>
+        <tr class="odd">
+          <td>Angelo Rizzuti</td>
+        </tr>
+        <tr>
+          <td>Derek Brady</td>
+        </tr>
+        <tr class="odd">
+          <td>Edward Fan</td>
+        </tr>
+        <tr>
+          <td>Emil Udovich</td>
+        </tr>
+        <tr class="odd">
+          <td>Henry Deng</td>
+        </tr>
+        <tr>
+          <td>Jim Maunders</td>
+        </tr>
+        <tr class="odd">
+          <td>John Fong</td>
+        </tr>
+        <tr>
+          <td>John Rizzuti</td>
+        </tr>
+        <tr class="odd">
+          <td>Kenzo Oka</td>
+        </tr>
+        <tr>
+          <td>Mike Togyi</td>
+        </tr>
+        <tr class="odd">
+          <td>Phil Dubois</td>
+        </tr>
+        <tr>
+          <td>Sue Archer</td>
+        </tr>
+        <tr class="odd">
+          <td>THE SCOUSER Tony Ungi</td>
+        </tr>
+        <tr>
+          <td>William Lockett</td>
+        </tr>
+      </table>
+    </div>
+    <div class="poolteam" id="p13">
+      <table cellspacing="0" class="pickers">
+        <tr>
+          <td class="header">Spain</td>
+        </tr>
+        <tr class="odd">
+          <td>Alex Manzi</td>
+        </tr>
+        <tr>
+          <td>Antonella Hansen</td>
+        </tr>
+        <tr class="odd">
+          <td>Brent Mayenburg</td>
+        </tr>
+        <tr>
+          <td>Edward Fan</td>
+        </tr>
+        <tr class="odd">
+          <td>Elvio Chies</td>
+        </tr>
+        <tr>
+          <td>Erminia Ciarniello</td>
+        </tr>
+        <tr class="odd">
+          <td>Henry Deng</td>
+        </tr>
+        <tr>
+          <td>Jim Maunders</td>
+        </tr>
+        <tr class="odd">
+          <td>John Fong</td>
+        </tr>
+        <tr>
+          <td>John Rizzuti</td>
+        </tr>
+        <tr class="odd">
+          <td>Kenzo Oka</td>
+        </tr>
+        <tr>
+          <td>Mike Togyi</td>
+        </tr>
+        <tr class="odd">
+          <td>Paul McDermott</td>
+        </tr>
+        <tr>
+          <td>Paula Brady</td>
+        </tr>
+        <tr class="odd">
+          <td>Sue Archer</td>
+        </tr>
+        <tr>
+          <td>Tatiana Voiniciuc</td>
+        </tr>
+        <tr class="odd">
+          <td>William Lockett</td>
+        </tr>
+      </table>
+    </div>
+    <div class="poolteam" id="p14">
+      <table cellspacing="0" class="pickers">
+        <tr>
+          <td class="header">Sweden</td>
+        </tr>
+        <tr class="odd">
+          <td>Aaron De Boer</td>
+        </tr>
+        <tr>
+          <td>Angelo Rizzuti</td>
+        </tr>
+        <tr class="odd">
+          <td>Antonella Hansen</td>
+        </tr>
+        <tr>
+          <td>Bob Wagstaff</td>
+        </tr>
+        <tr class="odd">
+          <td>Brent Mayenburg</td>
+        </tr>
+        <tr>
+          <td>Danny Ciarniello</td>
+        </tr>
+        <tr class="odd">
+          <td>Domenic Cimaglia</td>
+        </tr>
+        <tr>
+          <td>Edward Fan</td>
+        </tr>
+        <tr class="odd">
+          <td>Elvio Chies</td>
+        </tr>
+        <tr>
+          <td>Erminia Ciarniello</td>
+        </tr>
+        <tr class="odd">
+          <td>Frank Andriani</td>
+        </tr>
+        <tr>
+          <td>Frank Rizzuti</td>
+        </tr>
+        <tr class="odd">
+          <td>Greg Janelle</td>
+        </tr>
+        <tr>
+          <td>Henry Deng</td>
+        </tr>
+        <tr class="odd">
+          <td>Hiroko Yoshida</td>
+        </tr>
+        <tr>
+          <td>John Fong</td>
+        </tr>
+        <tr class="odd">
+          <td>John Rizzuti</td>
+        </tr>
+        <tr>
+          <td>Lisa Maunders</td>
+        </tr>
+        <tr class="odd">
+          <td>Lloyd &amp; Gina Hansen</td>
+        </tr>
+        <tr>
+          <td>Nilesh Tailor</td>
+        </tr>
+        <tr class="odd">
+          <td>Paul McDermott</td>
+        </tr>
+        <tr>
+          <td>Paula Brady</td>
+        </tr>
+        <tr class="odd">
+          <td>Phil Archer</td>
+        </tr>
+        <tr>
+          <td>Phil Dubois</td>
+        </tr>
+        <tr class="odd">
+          <td>Tatiana Voiniciuc</td>
+        </tr>
+      </table>
+    </div>
+    <div class="poolteam" id="p15">
+      <table cellspacing="0" class="pickers">
+        <tr>
+          <td class="header">Switzerland</td>
+        </tr>
+        <tr class="odd">
+          <td>Domenic Cimaglia</td>
+        </tr>
+        <tr>
+          <td>Edward Fan</td>
+        </tr>
+        <tr class="odd">
+          <td>Hiroko Yoshida</td>
+        </tr>
+        <tr>
+          <td>William Lockett</td>
+        </tr>
+      </table>
+    </div>
+    <div class="poolteam" id="p16">
+      <table cellspacing="0" class="pickers">
+        <tr>
+          <td class="header">Turkey</td>
+        </tr>
+        <tr class="odd">
+          <td>Alex Manzi</td>
+        </tr>
+        <tr>
+          <td>Alnoor Gangji</td>
+        </tr>
+        <tr class="odd">
+          <td>Antonella Hansen</td>
+        </tr>
+        <tr>
+          <td>Brent Mayenburg</td>
+        </tr>
+        <tr class="odd">
+          <td>Derek Brady</td>
+        </tr>
+        <tr>
+          <td>Elvio Chies</td>
+        </tr>
+        <tr class="odd">
+          <td>Emil Udovich</td>
+        </tr>
+        <tr>
+          <td>Erminia Ciarniello</td>
+        </tr>
+        <tr class="odd">
+          <td>Lisa Maunders</td>
+        </tr>
+        <tr>
+          <td>Paul McDermott</td>
+        </tr>
+        <tr class="odd">
+          <td>Paula Brady</td>
+        </tr>
+        <tr>
+          <td>Phil Archer</td>
+        </tr>
+        <tr class="odd">
+          <td>Stuart Maunders</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

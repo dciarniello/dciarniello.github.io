@@ -1,0 +1,256 @@
+#p0 {
+  visibility: visible;
+}
+
+#poolpage table, #matchpage table, #summarypage table {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#groups {
+  margin-left: 19%;
+  padding-top: 4px;
+}
+
+body
+{
+  background-color: white;
+  background-image: url("back.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
+  font-family: arial, sans-serif;
+  font-size: smaller;
+}
+
+div.poolstandings {
+  width: 35%;
+  float: left;
+  border-right-style: solid;
+  border-color: #778899;  /* lightslategray */
+  border-width: 1px;
+  font-size: 92%;
+}
+
+@media screen and (min-device-width:801px) {
+  div.poolstandings {
+    width:50%;
+    overflow-x:hidden;
+    overflow-y:auto;
+    height:600px;
+  }
+}
+
+div.poolstandings table {
+  width: 40%;
+}
+
+div.poolteam {
+  visibility: hidden;
+  position: absolute;
+  float: left;
+  left: 50%;
+  width:50%;
+  border-left-style: solid;
+  border-color: #778899;  /* lightslategray */
+  border-width: 1px;
+  font-size: 92%;
+}
+
+@media screen and (max-device-width:800px) {
+  div.poolteam {
+    left: 35%;
+    padding-left:5%;
+  }
+}
+
+div.todaymatches {
+  left: 50%;
+  font-size: 92%;
+  padding-bottom:20px;
+}
+
+div.header {
+  width: 100%;
+  color: #C23913;  /* orange */
+  text-align: center;
+  border-bottom-style: solid;
+  border-color: #778899;  /* lightslategray */
+  border-width: 1px;
+  font-size: xx-large;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+div.subhead {
+  width: 25%;
+  float:left;
+  text-align: center;
+  font-size: small;
+  font-weight: normal;
+}
+
+div.footer {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  position: absolute;
+  bottom: 0;
+  right: 1em;
+  font-size: x-small;
+  font-family: sans-serif;
+  clear: both;
+}
+
+div.grouprow {
+  clear: both;
+}
+
+div.group {
+  font-size: 92%;
+  font-style: sans-serif;
+  float: left;
+  padding-right: 1em;
+}
+
+.contact {
+  font-style: italic;
+}
+
+/*
+td.ranking {
+  padding-right: 5px;
+}
+*/
+
+td.points {
+  padding-left: 5px;
+  text-align: right;
+}
+
+td.header {
+  text-align: center;
+  border-bottom-style: solid;
+  border-color: #778899;  /* lightslategray */
+  border-width: 1px;
+/*  font-size: large; */
+  font-weight: bold;
+/*  padding-bottom: 10px; */
+  background-color: #C23913; /* orange */
+  color: white;
+}
+
+td.teamheader {
+  text-align: left;
+/*  text-decoration: underline; */
+  font-weight: bold;
+}
+
+td.pointheader {
+  text-align: center;
+/*  text-decoration: underline; */
+  font-weight: bold;
+}
+
+td.tieheader {
+  text-decoration: underline;
+  text-align: center;
+}
+
+td.tievalue {
+  text-align: center;
+}
+
+td.numcol {
+  text-align: center;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+tr.groupheader,tr.matchheader {
+  color: white;
+  background-color: #C23913; /* orange */
+  font-weight:bold;
+}
+
+tr.matchheader {
+  text-align: left;
+}
+
+tr.groupheader td {
+  padding-left: 0.5em;
+}
+
+tr.statheader {
+  font-weight: bold;
+}
+
+td.teamcol {
+  text-align: left;
+  width: 11em;
+}
+
+td.statcol {
+  text-align: center;
+  width: 1em;
+}
+
+.odd {
+  background-color: #F6E3DD; /* light orange */
+  color: black;
+}
+
+a:hover
+{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.eliminated {
+  color: #a0a0a0; /* lightgrey */
+}
+
+a img {
+  border: 0;
+}
+
+h1.stageheader {
+  font-size: large;
+  text-align: center;
+  color: #C23913; /* orange */
+}
+
+#matchresults {
+  font-size: 92%;
+  text-align: center;
+}
+
+tr.matchsubheader {
+  font-weight: bold;
+}
+
+tr.matchheader td {
+  padding-left: 0.5em;
+}
+
+td.imgcol {
+  width: 19px;
+}
+
+td.datecol {
+  width: 10em;
+}
+
+td.timecol {
+  padding-right: 5em;
+  word-spacing: 0.5em;
+}
+
+td.resultcol {
+  padding-left: 4em;
+  width: 7em;
+}
+
+table.pickers {
+  width: 15em;
+}
+

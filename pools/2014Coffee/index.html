@@ -1,0 +1,2846 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="js/jquery-1.7.2.min.js"></script>
+  <script src="js/pool.js"></script>
+  <style type="text/css">
+    @import url(css/pool.css);
+    @import url(css/flags.css);
+  </style>
+  <link href="soccer_16x16.gif" rel="icon" type="image/gif">
+  <title>2014 Coffee Pool</title>
+</head>
+<body>
+<div id="container">
+  <h1>2014 Coffee Pool</h1>
+  <ul class="menu">
+    <li id="standings" class="active">Pool Standings</li>
+    <li id="matches">Match Results</li>
+    <li id="groups">Group Standings</li>
+    <li id="summary">Pool Summary</li>
+  </ul>
+  <span class="clear"></span>
+  <div class="content standings">
+          <div class="leftColumn">
+            <table id="poolStandings" class="striped">
+        <caption>Standings</caption>
+        <thead>
+        <tr>
+          <td colspan="2"></td>
+          <td title="Remaining Teams" class="numCol">R</td>
+          <td title="Pool Points" class="points">P</td>
+        </tr>
+        </thead>
+        <tbody>
+                        <tr id="entry295">
+                    <td class="rank">1.</td>
+                    <td>Strobie</td>
+          <td class="numCol">1</td>
+          <td class="points">183</td>
+        </tr>
+                        <tr id="entry297">
+                    <td class="rank">2.</td>
+                    <td>Farshad</td>
+          <td class="numCol">1</td>
+          <td class="points">181</td>
+        </tr>
+                        <tr id="entry298">
+                    <td class="rank">3.</td>
+                    <td>Dan</td>
+          <td class="numCol">1</td>
+          <td class="points">170</td>
+        </tr>
+                        <tr id="entry296">
+                    <td class="rank">4.</td>
+                    <td>Ralphie</td>
+          <td class="numCol">1</td>
+          <td class="points">159</td>
+        </tr>
+                        <tr id="entry299">
+                    <td class="rank">5.</td>
+                    <td>Med</td>
+          <td class="numCol">0</td>
+          <td class="points">134</td>
+        </tr>
+                        <tr id="entry300">
+                    <td class="rank">6.</td>
+                    <td>Chris</td>
+          <td class="numCol">1</td>
+          <td class="points">127</td>
+        </tr>
+                        </tbody>
+      </table>
+      <table id="goals">
+        <tbody>
+        <tr>
+          <td>Total Goals</td>
+          <td class="points">171</td>
+        </tr>
+        <tr>
+          <td>Projected Goals</td>
+          <td class="points">171</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="rightColumn">
+      <div id="entries">
+                <div class="entry entry295">
+          <table class="striped">
+            <caption>Strobie</caption>
+            <thead>
+            <tr>
+              <th colspan="2">Team</th>
+              <th class="numCol" title="Wins">W</th>
+              <th class="numCol" title="Draws">D</th>
+              <th class="numCol" title="Losses">L</th>
+              <th class="numCol" title="Goals Scored">G</th>
+              <th class="numCol" title="Pool Points">P</th>
+            </tr>
+            </thead>
+            <tbody>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_arg"></span></td>
+              <td class="teamCol">Argentina</td>
+              <td class="numCol">6</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">8</td>
+              <td class="numCol">26</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_bel"></span></td>
+              <td class="teamCol">Belgium</td>
+              <td class="numCol">4</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">6</td>
+              <td class="numCol">18</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_bra"></span></td>
+              <td class="teamCol">Brazil</td>
+              <td class="numCol">4</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">11</td>
+              <td class="numCol">24</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_cro"></span></td>
+              <td class="teamCol">Croatia</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">2</td>
+              <td class="numCol">6</td>
+              <td class="numCol">9</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_ecu"></span></td>
+              <td class="teamCol">Ecuador</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">3</td>
+              <td class="numCol">7</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_eng"></span></td>
+              <td class="teamCol">England</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">2</td>
+              <td class="numCol">3</td>
+            </tr>
+                                    <tr>
+                            <td><span class="flag flagsp_ger"></span></td>
+              <td class="teamCol">Germany</td>
+              <td class="numCol">6</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">18</td>
+              <td class="numCol">37</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_jpn"></span></td>
+              <td class="teamCol">Japan</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">2</td>
+              <td class="numCol">3</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_kor"></span></td>
+              <td class="teamCol">Korea Republic</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">3</td>
+              <td class="numCol">4</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_mex"></span></td>
+              <td class="teamCol">Mexico</td>
+              <td class="numCol">2</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">5</td>
+              <td class="numCol">12</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_ned"></span></td>
+              <td class="teamCol">Netherlands</td>
+              <td class="numCol">6</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">15</td>
+              <td class="numCol">33</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_nga"></span></td>
+              <td class="teamCol">Nigeria</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">3</td>
+              <td class="numCol">7</td>
+            </tr>
+                        </tbody>
+          </table>
+          <table class="tiebreakers">
+            <caption>Tie Breakers</caption>
+            <tbody>
+            <tr>
+              <td class="tieName">Champion</td>
+              <td class="tieValue">Brazil</td>
+            </tr>
+            <tr>
+              <td class="tieName">Goals</td>
+              <td class="tieValue">143</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+                <div class="entry entry297">
+          <table class="striped">
+            <caption>Farshad</caption>
+            <thead>
+            <tr>
+              <th colspan="2">Team</th>
+              <th class="numCol" title="Wins">W</th>
+              <th class="numCol" title="Draws">D</th>
+              <th class="numCol" title="Losses">L</th>
+              <th class="numCol" title="Goals Scored">G</th>
+              <th class="numCol" title="Pool Points">P</th>
+            </tr>
+            </thead>
+            <tbody>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_arg"></span></td>
+              <td class="teamCol">Argentina</td>
+              <td class="numCol">6</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">8</td>
+              <td class="numCol">26</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_bel"></span></td>
+              <td class="teamCol">Belgium</td>
+              <td class="numCol">4</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">6</td>
+              <td class="numCol">18</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_bih"></span></td>
+              <td class="teamCol">Bosnia-Herzegovina</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">2</td>
+              <td class="numCol">4</td>
+              <td class="numCol">7</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_bra"></span></td>
+              <td class="teamCol">Brazil</td>
+              <td class="numCol">4</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">11</td>
+              <td class="numCol">24</td>
+            </tr>
+                                    <tr>
+                            <td><span class="flag flagsp_ger"></span></td>
+              <td class="teamCol">Germany</td>
+              <td class="numCol">6</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">18</td>
+              <td class="numCol">37</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_gha"></span></td>
+              <td class="teamCol">Ghana</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">4</td>
+              <td class="numCol">5</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_ita"></span></td>
+              <td class="teamCol">Italy</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">2</td>
+              <td class="numCol">2</td>
+              <td class="numCol">5</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_jpn"></span></td>
+              <td class="teamCol">Japan</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">2</td>
+              <td class="numCol">3</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_mex"></span></td>
+              <td class="teamCol">Mexico</td>
+              <td class="numCol">2</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">5</td>
+              <td class="numCol">12</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_ned"></span></td>
+              <td class="teamCol">Netherlands</td>
+              <td class="numCol">6</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">15</td>
+              <td class="numCol">33</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_nga"></span></td>
+              <td class="teamCol">Nigeria</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">3</td>
+              <td class="numCol">7</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_rus"></span></td>
+              <td class="teamCol">Russia</td>
+              <td class="numCol">0</td>
+              <td class="numCol">2</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">4</td>
+            </tr>
+                        </tbody>
+          </table>
+          <table class="tiebreakers">
+            <caption>Tie Breakers</caption>
+            <tbody>
+            <tr>
+              <td class="tieName">Champion</td>
+              <td class="tieValue">Brazil</td>
+            </tr>
+            <tr>
+              <td class="tieName">Goals</td>
+              <td class="tieValue">146</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+                <div class="entry entry298">
+          <table class="striped">
+            <caption>Dan</caption>
+            <thead>
+            <tr>
+              <th colspan="2">Team</th>
+              <th class="numCol" title="Wins">W</th>
+              <th class="numCol" title="Draws">D</th>
+              <th class="numCol" title="Losses">L</th>
+              <th class="numCol" title="Goals Scored">G</th>
+              <th class="numCol" title="Pool Points">P</th>
+            </tr>
+            </thead>
+            <tbody>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_arg"></span></td>
+              <td class="teamCol">Argentina</td>
+              <td class="numCol">6</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">8</td>
+              <td class="numCol">26</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_bel"></span></td>
+              <td class="teamCol">Belgium</td>
+              <td class="numCol">4</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">6</td>
+              <td class="numCol">18</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_crc"></span></td>
+              <td class="teamCol">Costa Rica</td>
+              <td class="numCol">3</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">5</td>
+              <td class="numCol">15</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_civ"></span></td>
+              <td class="teamCol">C&ocirc;te d'Ivoire</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">2</td>
+              <td class="numCol">4</td>
+              <td class="numCol">7</td>
+            </tr>
+                                    <tr>
+                            <td><span class="flag flagsp_ger"></span></td>
+              <td class="teamCol">Germany</td>
+              <td class="numCol">6</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">18</td>
+              <td class="numCol">37</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_irn"></span></td>
+              <td class="teamCol">Iran</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_ita"></span></td>
+              <td class="teamCol">Italy</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">2</td>
+              <td class="numCol">2</td>
+              <td class="numCol">5</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_jpn"></span></td>
+              <td class="teamCol">Japan</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">2</td>
+              <td class="numCol">3</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_mex"></span></td>
+              <td class="teamCol">Mexico</td>
+              <td class="numCol">2</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">5</td>
+              <td class="numCol">12</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_ned"></span></td>
+              <td class="teamCol">Netherlands</td>
+              <td class="numCol">6</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">15</td>
+              <td class="numCol">33</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_por"></span></td>
+              <td class="teamCol">Portugal</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">4</td>
+              <td class="numCol">8</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_rus"></span></td>
+              <td class="teamCol">Russia</td>
+              <td class="numCol">0</td>
+              <td class="numCol">2</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">4</td>
+            </tr>
+                        </tbody>
+          </table>
+          <table class="tiebreakers">
+            <caption>Tie Breakers</caption>
+            <tbody>
+            <tr>
+              <td class="tieName">Champion</td>
+              <td class="tieValue">Argentina</td>
+            </tr>
+            <tr>
+              <td class="tieName">Goals</td>
+              <td class="tieValue">150</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+                <div class="entry entry296">
+          <table class="striped">
+            <caption>Ralphie</caption>
+            <thead>
+            <tr>
+              <th colspan="2">Team</th>
+              <th class="numCol" title="Wins">W</th>
+              <th class="numCol" title="Draws">D</th>
+              <th class="numCol" title="Losses">L</th>
+              <th class="numCol" title="Goals Scored">G</th>
+              <th class="numCol" title="Pool Points">P</th>
+            </tr>
+            </thead>
+            <tbody>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_bel"></span></td>
+              <td class="teamCol">Belgium</td>
+              <td class="numCol">4</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">6</td>
+              <td class="numCol">18</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_bra"></span></td>
+              <td class="teamCol">Brazil</td>
+              <td class="numCol">4</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">11</td>
+              <td class="numCol">24</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_civ"></span></td>
+              <td class="teamCol">C&ocirc;te d'Ivoire</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">2</td>
+              <td class="numCol">4</td>
+              <td class="numCol">7</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_eng"></span></td>
+              <td class="teamCol">England</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">2</td>
+              <td class="numCol">3</td>
+            </tr>
+                                    <tr>
+                            <td><span class="flag flagsp_ger"></span></td>
+              <td class="teamCol">Germany</td>
+              <td class="numCol">6</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">18</td>
+              <td class="numCol">37</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_jpn"></span></td>
+              <td class="teamCol">Japan</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">2</td>
+              <td class="numCol">3</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_kor"></span></td>
+              <td class="teamCol">Korea Republic</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">3</td>
+              <td class="numCol">4</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_mex"></span></td>
+              <td class="teamCol">Mexico</td>
+              <td class="numCol">2</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">5</td>
+              <td class="numCol">12</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_ned"></span></td>
+              <td class="teamCol">Netherlands</td>
+              <td class="numCol">6</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">15</td>
+              <td class="numCol">33</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_nga"></span></td>
+              <td class="teamCol">Nigeria</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">3</td>
+              <td class="numCol">7</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_rus"></span></td>
+              <td class="teamCol">Russia</td>
+              <td class="numCol">0</td>
+              <td class="numCol">2</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">4</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_esp"></span></td>
+              <td class="teamCol">Spain</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">2</td>
+              <td class="numCol">4</td>
+              <td class="numCol">7</td>
+            </tr>
+                        </tbody>
+          </table>
+          <table class="tiebreakers">
+            <caption>Tie Breakers</caption>
+            <tbody>
+            <tr>
+              <td class="tieName">Champion</td>
+              <td class="tieValue">Spain</td>
+            </tr>
+            <tr>
+              <td class="tieName">Goals</td>
+              <td class="tieValue">148</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+                <div class="entry entry299">
+          <table class="striped">
+            <caption>Med</caption>
+            <thead>
+            <tr>
+              <th colspan="2">Team</th>
+              <th class="numCol" title="Wins">W</th>
+              <th class="numCol" title="Draws">D</th>
+              <th class="numCol" title="Losses">L</th>
+              <th class="numCol" title="Goals Scored">G</th>
+              <th class="numCol" title="Pool Points">P</th>
+            </tr>
+            </thead>
+            <tbody>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_arg"></span></td>
+              <td class="teamCol">Argentina</td>
+              <td class="numCol">6</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">8</td>
+              <td class="numCol">26</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_bra"></span></td>
+              <td class="teamCol">Brazil</td>
+              <td class="numCol">4</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">11</td>
+              <td class="numCol">24</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_cmr"></span></td>
+              <td class="teamCol">Cameroon</td>
+              <td class="numCol">0</td>
+              <td class="numCol">0</td>
+              <td class="numCol">3</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_crc"></span></td>
+              <td class="teamCol">Costa Rica</td>
+              <td class="numCol">3</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">5</td>
+              <td class="numCol">15</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_civ"></span></td>
+              <td class="teamCol">C&ocirc;te d'Ivoire</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">2</td>
+              <td class="numCol">4</td>
+              <td class="numCol">7</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_cro"></span></td>
+              <td class="teamCol">Croatia</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">2</td>
+              <td class="numCol">6</td>
+              <td class="numCol">9</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_eng"></span></td>
+              <td class="teamCol">England</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">2</td>
+              <td class="numCol">3</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_fra"></span></td>
+              <td class="teamCol">France</td>
+              <td class="numCol">3</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">10</td>
+              <td class="numCol">20</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_gha"></span></td>
+              <td class="teamCol">Ghana</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">4</td>
+              <td class="numCol">5</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_ita"></span></td>
+              <td class="teamCol">Italy</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">2</td>
+              <td class="numCol">2</td>
+              <td class="numCol">5</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_mex"></span></td>
+              <td class="teamCol">Mexico</td>
+              <td class="numCol">2</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">5</td>
+              <td class="numCol">12</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_esp"></span></td>
+              <td class="teamCol">Spain</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">2</td>
+              <td class="numCol">4</td>
+              <td class="numCol">7</td>
+            </tr>
+                        </tbody>
+          </table>
+          <table class="tiebreakers">
+            <caption>Tie Breakers</caption>
+            <tbody>
+            <tr>
+              <td class="tieName">Champion</td>
+              <td class="tieValue">Argentina</td>
+            </tr>
+            <tr>
+              <td class="tieName">Goals</td>
+              <td class="tieValue">148</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+                <div class="entry entry300">
+          <table class="striped">
+            <caption>Chris</caption>
+            <thead>
+            <tr>
+              <th colspan="2">Team</th>
+              <th class="numCol" title="Wins">W</th>
+              <th class="numCol" title="Draws">D</th>
+              <th class="numCol" title="Losses">L</th>
+              <th class="numCol" title="Goals Scored">G</th>
+              <th class="numCol" title="Pool Points">P</th>
+            </tr>
+            </thead>
+            <tbody>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_bra"></span></td>
+              <td class="teamCol">Brazil</td>
+              <td class="numCol">4</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">11</td>
+              <td class="numCol">24</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_cmr"></span></td>
+              <td class="teamCol">Cameroon</td>
+              <td class="numCol">0</td>
+              <td class="numCol">0</td>
+              <td class="numCol">3</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_crc"></span></td>
+              <td class="teamCol">Costa Rica</td>
+              <td class="numCol">3</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">5</td>
+              <td class="numCol">15</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_civ"></span></td>
+              <td class="teamCol">C&ocirc;te d'Ivoire</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">2</td>
+              <td class="numCol">4</td>
+              <td class="numCol">7</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_cro"></span></td>
+              <td class="teamCol">Croatia</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">2</td>
+              <td class="numCol">6</td>
+              <td class="numCol">9</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_ecu"></span></td>
+              <td class="teamCol">Ecuador</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">3</td>
+              <td class="numCol">7</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_eng"></span></td>
+              <td class="teamCol">England</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">2</td>
+              <td class="numCol">3</td>
+            </tr>
+                                    <tr>
+                            <td><span class="flag flagsp_ger"></span></td>
+              <td class="teamCol">Germany</td>
+              <td class="numCol">6</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">18</td>
+              <td class="numCol">37</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_gha"></span></td>
+              <td class="teamCol">Ghana</td>
+              <td class="numCol">0</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">4</td>
+              <td class="numCol">5</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_gre"></span></td>
+              <td class="teamCol">Greece</td>
+              <td class="numCol">1</td>
+              <td class="numCol">1</td>
+              <td class="numCol">2</td>
+              <td class="numCol">3</td>
+              <td class="numCol">7</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_ita"></span></td>
+              <td class="teamCol">Italy</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">2</td>
+              <td class="numCol">2</td>
+              <td class="numCol">5</td>
+            </tr>
+                                    <tr class="eliminated">
+                            <td><span class="flag flagsp_esp"></span></td>
+              <td class="teamCol">Spain</td>
+              <td class="numCol">1</td>
+              <td class="numCol">0</td>
+              <td class="numCol">2</td>
+              <td class="numCol">4</td>
+              <td class="numCol">7</td>
+            </tr>
+                        </tbody>
+          </table>
+          <table class="tiebreakers">
+            <caption>Tie Breakers</caption>
+            <tbody>
+            <tr>
+              <td class="tieName">Champion</td>
+              <td class="tieValue">Germany</td>
+            </tr>
+            <tr>
+              <td class="tieName">Goals</td>
+              <td class="tieValue">143</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+              </div>
+    </div>
+  </div>  <div class="content groups">
+    <table class="group striped">
+    <caption>Group A</caption>
+    <thead>
+    <tr>
+      <th colspan="2">Team</th>
+      <th class="numCol" title="Matches Played">MP</th>
+      <th class="numCol" title="Wins">W</th>
+      <th class="numCol" title="Draws">D</th>
+      <th class="numCol" title="Losses">L</th>
+      <th class="numCol" title="Goals Scored">GF</th>
+      <th class="numCol" title="Goals Against">GA</th>
+      <th class="numCol" title="Points">Pts</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+      <td><span class="flag flagsp_bra"></span></td>
+      <td class="teamCol">Brazil</td>
+      <td class="numCol">3</td>
+      <td class="numCol">2</td>
+      <td class="numCol">1</td>
+      <td class="numCol">0</td>
+      <td class="numCol">7</td>
+      <td class="numCol">2</td>
+      <td class="numCol">7</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_mex"></span></td>
+      <td class="teamCol">Mexico</td>
+      <td class="numCol">3</td>
+      <td class="numCol">2</td>
+      <td class="numCol">1</td>
+      <td class="numCol">0</td>
+      <td class="numCol">4</td>
+      <td class="numCol">1</td>
+      <td class="numCol">7</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_cro"></span></td>
+      <td class="teamCol">Croatia</td>
+      <td class="numCol">3</td>
+      <td class="numCol">1</td>
+      <td class="numCol">0</td>
+      <td class="numCol">2</td>
+      <td class="numCol">6</td>
+      <td class="numCol">6</td>
+      <td class="numCol">3</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_cmr"></span></td>
+      <td class="teamCol">Cameroon</td>
+      <td class="numCol">3</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">3</td>
+      <td class="numCol">1</td>
+      <td class="numCol">9</td>
+      <td class="numCol">0</td>
+    </tr>
+        </tbody>
+  </table>
+    <table class="group striped">
+    <caption>Group B</caption>
+    <thead>
+    <tr>
+      <th colspan="2">Team</th>
+      <th class="numCol" title="Matches Played">MP</th>
+      <th class="numCol" title="Wins">W</th>
+      <th class="numCol" title="Draws">D</th>
+      <th class="numCol" title="Losses">L</th>
+      <th class="numCol" title="Goals Scored">GF</th>
+      <th class="numCol" title="Goals Against">GA</th>
+      <th class="numCol" title="Points">Pts</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+      <td><span class="flag flagsp_ned"></span></td>
+      <td class="teamCol">Netherlands</td>
+      <td class="numCol">3</td>
+      <td class="numCol">3</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">10</td>
+      <td class="numCol">3</td>
+      <td class="numCol">9</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_chi"></span></td>
+      <td class="teamCol">Chile</td>
+      <td class="numCol">3</td>
+      <td class="numCol">2</td>
+      <td class="numCol">0</td>
+      <td class="numCol">1</td>
+      <td class="numCol">5</td>
+      <td class="numCol">3</td>
+      <td class="numCol">6</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_esp"></span></td>
+      <td class="teamCol">Spain</td>
+      <td class="numCol">3</td>
+      <td class="numCol">1</td>
+      <td class="numCol">0</td>
+      <td class="numCol">2</td>
+      <td class="numCol">4</td>
+      <td class="numCol">7</td>
+      <td class="numCol">3</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_aus"></span></td>
+      <td class="teamCol">Australia</td>
+      <td class="numCol">3</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">3</td>
+      <td class="numCol">3</td>
+      <td class="numCol">9</td>
+      <td class="numCol">0</td>
+    </tr>
+        </tbody>
+  </table>
+    <table class="group striped">
+    <caption>Group C</caption>
+    <thead>
+    <tr>
+      <th colspan="2">Team</th>
+      <th class="numCol" title="Matches Played">MP</th>
+      <th class="numCol" title="Wins">W</th>
+      <th class="numCol" title="Draws">D</th>
+      <th class="numCol" title="Losses">L</th>
+      <th class="numCol" title="Goals Scored">GF</th>
+      <th class="numCol" title="Goals Against">GA</th>
+      <th class="numCol" title="Points">Pts</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+      <td><span class="flag flagsp_col"></span></td>
+      <td class="teamCol">Colombia</td>
+      <td class="numCol">3</td>
+      <td class="numCol">3</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">9</td>
+      <td class="numCol">2</td>
+      <td class="numCol">9</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_gre"></span></td>
+      <td class="teamCol">Greece</td>
+      <td class="numCol">3</td>
+      <td class="numCol">1</td>
+      <td class="numCol">1</td>
+      <td class="numCol">1</td>
+      <td class="numCol">2</td>
+      <td class="numCol">4</td>
+      <td class="numCol">4</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_civ"></span></td>
+      <td class="teamCol">C&ocirc;te d'Ivoire</td>
+      <td class="numCol">3</td>
+      <td class="numCol">1</td>
+      <td class="numCol">0</td>
+      <td class="numCol">2</td>
+      <td class="numCol">4</td>
+      <td class="numCol">5</td>
+      <td class="numCol">3</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_jpn"></span></td>
+      <td class="teamCol">Japan</td>
+      <td class="numCol">3</td>
+      <td class="numCol">0</td>
+      <td class="numCol">1</td>
+      <td class="numCol">2</td>
+      <td class="numCol">2</td>
+      <td class="numCol">6</td>
+      <td class="numCol">1</td>
+    </tr>
+        </tbody>
+  </table>
+    <table class="group striped">
+    <caption>Group D</caption>
+    <thead>
+    <tr>
+      <th colspan="2">Team</th>
+      <th class="numCol" title="Matches Played">MP</th>
+      <th class="numCol" title="Wins">W</th>
+      <th class="numCol" title="Draws">D</th>
+      <th class="numCol" title="Losses">L</th>
+      <th class="numCol" title="Goals Scored">GF</th>
+      <th class="numCol" title="Goals Against">GA</th>
+      <th class="numCol" title="Points">Pts</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+      <td><span class="flag flagsp_crc"></span></td>
+      <td class="teamCol">Costa Rica</td>
+      <td class="numCol">3</td>
+      <td class="numCol">2</td>
+      <td class="numCol">1</td>
+      <td class="numCol">0</td>
+      <td class="numCol">4</td>
+      <td class="numCol">1</td>
+      <td class="numCol">7</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_uru"></span></td>
+      <td class="teamCol">Uruguay</td>
+      <td class="numCol">3</td>
+      <td class="numCol">2</td>
+      <td class="numCol">0</td>
+      <td class="numCol">1</td>
+      <td class="numCol">4</td>
+      <td class="numCol">4</td>
+      <td class="numCol">6</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_ita"></span></td>
+      <td class="teamCol">Italy</td>
+      <td class="numCol">3</td>
+      <td class="numCol">1</td>
+      <td class="numCol">0</td>
+      <td class="numCol">2</td>
+      <td class="numCol">2</td>
+      <td class="numCol">3</td>
+      <td class="numCol">3</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_eng"></span></td>
+      <td class="teamCol">England</td>
+      <td class="numCol">3</td>
+      <td class="numCol">0</td>
+      <td class="numCol">1</td>
+      <td class="numCol">2</td>
+      <td class="numCol">2</td>
+      <td class="numCol">4</td>
+      <td class="numCol">1</td>
+    </tr>
+        </tbody>
+  </table>
+    <table class="group striped">
+    <caption>Group E</caption>
+    <thead>
+    <tr>
+      <th colspan="2">Team</th>
+      <th class="numCol" title="Matches Played">MP</th>
+      <th class="numCol" title="Wins">W</th>
+      <th class="numCol" title="Draws">D</th>
+      <th class="numCol" title="Losses">L</th>
+      <th class="numCol" title="Goals Scored">GF</th>
+      <th class="numCol" title="Goals Against">GA</th>
+      <th class="numCol" title="Points">Pts</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+      <td><span class="flag flagsp_fra"></span></td>
+      <td class="teamCol">France</td>
+      <td class="numCol">3</td>
+      <td class="numCol">2</td>
+      <td class="numCol">1</td>
+      <td class="numCol">0</td>
+      <td class="numCol">8</td>
+      <td class="numCol">2</td>
+      <td class="numCol">7</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_sui"></span></td>
+      <td class="teamCol">Switzerland</td>
+      <td class="numCol">3</td>
+      <td class="numCol">2</td>
+      <td class="numCol">0</td>
+      <td class="numCol">1</td>
+      <td class="numCol">7</td>
+      <td class="numCol">6</td>
+      <td class="numCol">6</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_ecu"></span></td>
+      <td class="teamCol">Ecuador</td>
+      <td class="numCol">3</td>
+      <td class="numCol">1</td>
+      <td class="numCol">1</td>
+      <td class="numCol">1</td>
+      <td class="numCol">3</td>
+      <td class="numCol">3</td>
+      <td class="numCol">4</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_hon"></span></td>
+      <td class="teamCol">Honduras</td>
+      <td class="numCol">3</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">3</td>
+      <td class="numCol">1</td>
+      <td class="numCol">8</td>
+      <td class="numCol">0</td>
+    </tr>
+        </tbody>
+  </table>
+    <table class="group striped">
+    <caption>Group F</caption>
+    <thead>
+    <tr>
+      <th colspan="2">Team</th>
+      <th class="numCol" title="Matches Played">MP</th>
+      <th class="numCol" title="Wins">W</th>
+      <th class="numCol" title="Draws">D</th>
+      <th class="numCol" title="Losses">L</th>
+      <th class="numCol" title="Goals Scored">GF</th>
+      <th class="numCol" title="Goals Against">GA</th>
+      <th class="numCol" title="Points">Pts</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+      <td><span class="flag flagsp_arg"></span></td>
+      <td class="teamCol">Argentina</td>
+      <td class="numCol">3</td>
+      <td class="numCol">3</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">6</td>
+      <td class="numCol">3</td>
+      <td class="numCol">9</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_nga"></span></td>
+      <td class="teamCol">Nigeria</td>
+      <td class="numCol">3</td>
+      <td class="numCol">1</td>
+      <td class="numCol">1</td>
+      <td class="numCol">1</td>
+      <td class="numCol">3</td>
+      <td class="numCol">3</td>
+      <td class="numCol">4</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_bih"></span></td>
+      <td class="teamCol">Bosnia-Herzegovina</td>
+      <td class="numCol">3</td>
+      <td class="numCol">1</td>
+      <td class="numCol">0</td>
+      <td class="numCol">2</td>
+      <td class="numCol">4</td>
+      <td class="numCol">4</td>
+      <td class="numCol">3</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_irn"></span></td>
+      <td class="teamCol">Iran</td>
+      <td class="numCol">3</td>
+      <td class="numCol">0</td>
+      <td class="numCol">1</td>
+      <td class="numCol">2</td>
+      <td class="numCol">1</td>
+      <td class="numCol">4</td>
+      <td class="numCol">1</td>
+    </tr>
+        </tbody>
+  </table>
+    <table class="group striped">
+    <caption>Group G</caption>
+    <thead>
+    <tr>
+      <th colspan="2">Team</th>
+      <th class="numCol" title="Matches Played">MP</th>
+      <th class="numCol" title="Wins">W</th>
+      <th class="numCol" title="Draws">D</th>
+      <th class="numCol" title="Losses">L</th>
+      <th class="numCol" title="Goals Scored">GF</th>
+      <th class="numCol" title="Goals Against">GA</th>
+      <th class="numCol" title="Points">Pts</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+      <td><span class="flag flagsp_ger"></span></td>
+      <td class="teamCol">Germany</td>
+      <td class="numCol">3</td>
+      <td class="numCol">2</td>
+      <td class="numCol">1</td>
+      <td class="numCol">0</td>
+      <td class="numCol">7</td>
+      <td class="numCol">2</td>
+      <td class="numCol">7</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_usa"></span></td>
+      <td class="teamCol">USA</td>
+      <td class="numCol">3</td>
+      <td class="numCol">1</td>
+      <td class="numCol">1</td>
+      <td class="numCol">1</td>
+      <td class="numCol">4</td>
+      <td class="numCol">4</td>
+      <td class="numCol">4</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_por"></span></td>
+      <td class="teamCol">Portugal</td>
+      <td class="numCol">3</td>
+      <td class="numCol">1</td>
+      <td class="numCol">1</td>
+      <td class="numCol">1</td>
+      <td class="numCol">4</td>
+      <td class="numCol">7</td>
+      <td class="numCol">4</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_gha"></span></td>
+      <td class="teamCol">Ghana</td>
+      <td class="numCol">3</td>
+      <td class="numCol">0</td>
+      <td class="numCol">1</td>
+      <td class="numCol">2</td>
+      <td class="numCol">4</td>
+      <td class="numCol">6</td>
+      <td class="numCol">1</td>
+    </tr>
+        </tbody>
+  </table>
+    <table class="group striped">
+    <caption>Group H</caption>
+    <thead>
+    <tr>
+      <th colspan="2">Team</th>
+      <th class="numCol" title="Matches Played">MP</th>
+      <th class="numCol" title="Wins">W</th>
+      <th class="numCol" title="Draws">D</th>
+      <th class="numCol" title="Losses">L</th>
+      <th class="numCol" title="Goals Scored">GF</th>
+      <th class="numCol" title="Goals Against">GA</th>
+      <th class="numCol" title="Points">Pts</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+      <td><span class="flag flagsp_bel"></span></td>
+      <td class="teamCol">Belgium</td>
+      <td class="numCol">3</td>
+      <td class="numCol">3</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">4</td>
+      <td class="numCol">1</td>
+      <td class="numCol">9</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_alg"></span></td>
+      <td class="teamCol">Algeria</td>
+      <td class="numCol">3</td>
+      <td class="numCol">1</td>
+      <td class="numCol">1</td>
+      <td class="numCol">1</td>
+      <td class="numCol">6</td>
+      <td class="numCol">5</td>
+      <td class="numCol">4</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_rus"></span></td>
+      <td class="teamCol">Russia</td>
+      <td class="numCol">3</td>
+      <td class="numCol">0</td>
+      <td class="numCol">2</td>
+      <td class="numCol">1</td>
+      <td class="numCol">2</td>
+      <td class="numCol">3</td>
+      <td class="numCol">2</td>
+    </tr>
+        <tr>
+      <td><span class="flag flagsp_kor"></span></td>
+      <td class="teamCol">Korea Republic</td>
+      <td class="numCol">3</td>
+      <td class="numCol">0</td>
+      <td class="numCol">1</td>
+      <td class="numCol">2</td>
+      <td class="numCol">3</td>
+      <td class="numCol">6</td>
+      <td class="numCol">1</td>
+    </tr>
+        </tbody>
+  </table>
+  </div>  <div class="content matches">
+  <div id="groupStage">
+    <h1>Group Stage</h1>
+    <table class="matches striped">
+      <caption>Completed Matches</caption>
+<thead>
+<tr>
+    <th class="numCol">Match</th>
+    <th class="dateCol">Date</th>
+  <th class="timeCol">Time</th>
+  <th></th>
+  <th class="matchUp">Teams</th>
+  <th></th>
+  <th class="resultCol">Result</th>
+</tr>
+</thead>
+      <tbody>
+        <tr>
+    <td class="numCol">1</td>
+    <td class="dateCol">12-Jun-14</td>
+  <td class="timeCol">13:00 PDT</td>
+    <td><span class="flag flagsp_bra"></span></td>
+    <td class="matchUp">bra:cro</td>
+    <td><span class="flag flagsp_cro"></span></td>
+      <td class="resultCol">3 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">2</td>
+    <td class="dateCol">13-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_mex"></span></td>
+    <td class="matchUp">mex:cmr</td>
+    <td><span class="flag flagsp_cmr"></span></td>
+      <td class="resultCol">1 - 0  </td>
+  </tr>
+        <tr>
+    <td class="numCol">3</td>
+    <td class="dateCol">13-Jun-14</td>
+  <td class="timeCol">12:00 PDT</td>
+    <td><span class="flag flagsp_esp"></span></td>
+    <td class="matchUp">esp:ned</td>
+    <td><span class="flag flagsp_ned"></span></td>
+      <td class="resultCol">1 - 5  </td>
+  </tr>
+        <tr>
+    <td class="numCol">4</td>
+    <td class="dateCol">13-Jun-14</td>
+  <td class="timeCol">15:00 PDT</td>
+    <td><span class="flag flagsp_chi"></span></td>
+    <td class="matchUp">chi:aus</td>
+    <td><span class="flag flagsp_aus"></span></td>
+      <td class="resultCol">3 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">5</td>
+    <td class="dateCol">14-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_col"></span></td>
+    <td class="matchUp">col:gre</td>
+    <td><span class="flag flagsp_gre"></span></td>
+      <td class="resultCol">3 - 0  </td>
+  </tr>
+        <tr>
+    <td class="numCol">6</td>
+    <td class="dateCol">14-Jun-14</td>
+  <td class="timeCol">18:00 PDT</td>
+    <td><span class="flag flagsp_civ"></span></td>
+    <td class="matchUp">civ:jpn</td>
+    <td><span class="flag flagsp_jpn"></span></td>
+      <td class="resultCol">2 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">7</td>
+    <td class="dateCol">14-Jun-14</td>
+  <td class="timeCol">12:00 PDT</td>
+    <td><span class="flag flagsp_uru"></span></td>
+    <td class="matchUp">uru:crc</td>
+    <td><span class="flag flagsp_crc"></span></td>
+      <td class="resultCol">1 - 3  </td>
+  </tr>
+        <tr>
+    <td class="numCol">8</td>
+    <td class="dateCol">14-Jun-14</td>
+  <td class="timeCol">15:00 PDT</td>
+    <td><span class="flag flagsp_eng"></span></td>
+    <td class="matchUp">eng:ita</td>
+    <td><span class="flag flagsp_ita"></span></td>
+      <td class="resultCol">1 - 2  </td>
+  </tr>
+        <tr>
+    <td class="numCol">9</td>
+    <td class="dateCol">15-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_sui"></span></td>
+    <td class="matchUp">sui:ecu</td>
+    <td><span class="flag flagsp_ecu"></span></td>
+      <td class="resultCol">2 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">10</td>
+    <td class="dateCol">15-Jun-14</td>
+  <td class="timeCol">12:00 PDT</td>
+    <td><span class="flag flagsp_fra"></span></td>
+    <td class="matchUp">fra:hon</td>
+    <td><span class="flag flagsp_hon"></span></td>
+      <td class="resultCol">3 - 0  </td>
+  </tr>
+        <tr>
+    <td class="numCol">11</td>
+    <td class="dateCol">15-Jun-14</td>
+  <td class="timeCol">15:00 PDT</td>
+    <td><span class="flag flagsp_arg"></span></td>
+    <td class="matchUp">arg:bih</td>
+    <td><span class="flag flagsp_bih"></span></td>
+      <td class="resultCol">2 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">12</td>
+    <td class="dateCol">16-Jun-14</td>
+  <td class="timeCol">12:00 PDT</td>
+    <td><span class="flag flagsp_irn"></span></td>
+    <td class="matchUp">irn:nga</td>
+    <td><span class="flag flagsp_nga"></span></td>
+      <td class="resultCol">0 - 0  </td>
+  </tr>
+        <tr>
+    <td class="numCol">13</td>
+    <td class="dateCol">16-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_ger"></span></td>
+    <td class="matchUp">ger:por</td>
+    <td><span class="flag flagsp_por"></span></td>
+      <td class="resultCol">4 - 0  </td>
+  </tr>
+        <tr>
+    <td class="numCol">14</td>
+    <td class="dateCol">16-Jun-14</td>
+  <td class="timeCol">15:00 PDT</td>
+    <td><span class="flag flagsp_gha"></span></td>
+    <td class="matchUp">gha:usa</td>
+    <td><span class="flag flagsp_usa"></span></td>
+      <td class="resultCol">1 - 2  </td>
+  </tr>
+        <tr>
+    <td class="numCol">15</td>
+    <td class="dateCol">17-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_bel"></span></td>
+    <td class="matchUp">bel:alg</td>
+    <td><span class="flag flagsp_alg"></span></td>
+      <td class="resultCol">2 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">16</td>
+    <td class="dateCol">17-Jun-14</td>
+  <td class="timeCol">15:00 PDT</td>
+    <td><span class="flag flagsp_rus"></span></td>
+    <td class="matchUp">rus:kor</td>
+    <td><span class="flag flagsp_kor"></span></td>
+      <td class="resultCol">1 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">17</td>
+    <td class="dateCol">17-Jun-14</td>
+  <td class="timeCol">12:00 PDT</td>
+    <td><span class="flag flagsp_bra"></span></td>
+    <td class="matchUp">bra:mex</td>
+    <td><span class="flag flagsp_mex"></span></td>
+      <td class="resultCol">0 - 0  </td>
+  </tr>
+        <tr>
+    <td class="numCol">18</td>
+    <td class="dateCol">18-Jun-14</td>
+  <td class="timeCol">15:00 PDT</td>
+    <td><span class="flag flagsp_cmr"></span></td>
+    <td class="matchUp">cmr:cro</td>
+    <td><span class="flag flagsp_cro"></span></td>
+      <td class="resultCol">0 - 4  </td>
+  </tr>
+        <tr>
+    <td class="numCol">19</td>
+    <td class="dateCol">18-Jun-14</td>
+  <td class="timeCol">12:00 PDT</td>
+    <td><span class="flag flagsp_esp"></span></td>
+    <td class="matchUp">esp:chi</td>
+    <td><span class="flag flagsp_chi"></span></td>
+      <td class="resultCol">0 - 2  </td>
+  </tr>
+        <tr>
+    <td class="numCol">20</td>
+    <td class="dateCol">18-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_aus"></span></td>
+    <td class="matchUp">aus:ned</td>
+    <td><span class="flag flagsp_ned"></span></td>
+      <td class="resultCol">2 - 3  </td>
+  </tr>
+        <tr>
+    <td class="numCol">21</td>
+    <td class="dateCol">19-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_col"></span></td>
+    <td class="matchUp">col:civ</td>
+    <td><span class="flag flagsp_civ"></span></td>
+      <td class="resultCol">2 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">22</td>
+    <td class="dateCol">19-Jun-14</td>
+  <td class="timeCol">15:00 PDT</td>
+    <td><span class="flag flagsp_jpn"></span></td>
+    <td class="matchUp">jpn:gre</td>
+    <td><span class="flag flagsp_gre"></span></td>
+      <td class="resultCol">0 - 0  </td>
+  </tr>
+        <tr>
+    <td class="numCol">23</td>
+    <td class="dateCol">19-Jun-14</td>
+  <td class="timeCol">12:00 PDT</td>
+    <td><span class="flag flagsp_uru"></span></td>
+    <td class="matchUp">uru:eng</td>
+    <td><span class="flag flagsp_eng"></span></td>
+      <td class="resultCol">2 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">24</td>
+    <td class="dateCol">20-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_ita"></span></td>
+    <td class="matchUp">ita:crc</td>
+    <td><span class="flag flagsp_crc"></span></td>
+      <td class="resultCol">0 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">25</td>
+    <td class="dateCol">20-Jun-14</td>
+  <td class="timeCol">12:00 PDT</td>
+    <td><span class="flag flagsp_sui"></span></td>
+    <td class="matchUp">sui:fra</td>
+    <td><span class="flag flagsp_fra"></span></td>
+      <td class="resultCol">2 - 5  </td>
+  </tr>
+        <tr>
+    <td class="numCol">26</td>
+    <td class="dateCol">20-Jun-14</td>
+  <td class="timeCol">15:00 PDT</td>
+    <td><span class="flag flagsp_hon"></span></td>
+    <td class="matchUp">hon:ecu</td>
+    <td><span class="flag flagsp_ecu"></span></td>
+      <td class="resultCol">1 - 2  </td>
+  </tr>
+        <tr>
+    <td class="numCol">27</td>
+    <td class="dateCol">21-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_arg"></span></td>
+    <td class="matchUp">arg:irn</td>
+    <td><span class="flag flagsp_irn"></span></td>
+      <td class="resultCol">1 - 0  </td>
+  </tr>
+        <tr>
+    <td class="numCol">28</td>
+    <td class="dateCol">21-Jun-14</td>
+  <td class="timeCol">15:00 PDT</td>
+    <td><span class="flag flagsp_nga"></span></td>
+    <td class="matchUp">nga:bih</td>
+    <td><span class="flag flagsp_bih"></span></td>
+      <td class="resultCol">1 - 0  </td>
+  </tr>
+        <tr>
+    <td class="numCol">29</td>
+    <td class="dateCol">21-Jun-14</td>
+  <td class="timeCol">12:00 PDT</td>
+    <td><span class="flag flagsp_ger"></span></td>
+    <td class="matchUp">ger:gha</td>
+    <td><span class="flag flagsp_gha"></span></td>
+      <td class="resultCol">2 - 2  </td>
+  </tr>
+        <tr>
+    <td class="numCol">30</td>
+    <td class="dateCol">22-Jun-14</td>
+  <td class="timeCol">15:00 PDT</td>
+    <td><span class="flag flagsp_usa"></span></td>
+    <td class="matchUp">usa:por</td>
+    <td><span class="flag flagsp_por"></span></td>
+      <td class="resultCol">2 - 2  </td>
+  </tr>
+        <tr>
+    <td class="numCol">31</td>
+    <td class="dateCol">22-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_bel"></span></td>
+    <td class="matchUp">bel:rus</td>
+    <td><span class="flag flagsp_rus"></span></td>
+      <td class="resultCol">1 - 0  </td>
+  </tr>
+        <tr>
+    <td class="numCol">32</td>
+    <td class="dateCol">22-Jun-14</td>
+  <td class="timeCol">12:00 PDT</td>
+    <td><span class="flag flagsp_kor"></span></td>
+    <td class="matchUp">kor:alg</td>
+    <td><span class="flag flagsp_alg"></span></td>
+      <td class="resultCol">2 - 4  </td>
+  </tr>
+        <tr>
+    <td class="numCol">33</td>
+    <td class="dateCol">23-Jun-14</td>
+  <td class="timeCol">13:00 PDT</td>
+    <td><span class="flag flagsp_cmr"></span></td>
+    <td class="matchUp">cmr:bra</td>
+    <td><span class="flag flagsp_bra"></span></td>
+      <td class="resultCol">1 - 4  </td>
+  </tr>
+        <tr>
+    <td class="numCol">34</td>
+    <td class="dateCol">23-Jun-14</td>
+  <td class="timeCol">13:00 PDT</td>
+    <td><span class="flag flagsp_cro"></span></td>
+    <td class="matchUp">cro:mex</td>
+    <td><span class="flag flagsp_mex"></span></td>
+      <td class="resultCol">1 - 3  </td>
+  </tr>
+        <tr>
+    <td class="numCol">35</td>
+    <td class="dateCol">23-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_aus"></span></td>
+    <td class="matchUp">aus:esp</td>
+    <td><span class="flag flagsp_esp"></span></td>
+      <td class="resultCol">0 - 3  </td>
+  </tr>
+        <tr>
+    <td class="numCol">36</td>
+    <td class="dateCol">23-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_ned"></span></td>
+    <td class="matchUp">ned:chi</td>
+    <td><span class="flag flagsp_chi"></span></td>
+      <td class="resultCol">2 - 0  </td>
+  </tr>
+        <tr>
+    <td class="numCol">37</td>
+    <td class="dateCol">24-Jun-14</td>
+  <td class="timeCol">13:00 PDT</td>
+    <td><span class="flag flagsp_jpn"></span></td>
+    <td class="matchUp">jpn:col</td>
+    <td><span class="flag flagsp_col"></span></td>
+      <td class="resultCol">1 - 4  </td>
+  </tr>
+        <tr>
+    <td class="numCol">38</td>
+    <td class="dateCol">24-Jun-14</td>
+  <td class="timeCol">13:00 PDT</td>
+    <td><span class="flag flagsp_gre"></span></td>
+    <td class="matchUp">gre:civ</td>
+    <td><span class="flag flagsp_civ"></span></td>
+      <td class="resultCol">2 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">39</td>
+    <td class="dateCol">24-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_ita"></span></td>
+    <td class="matchUp">ita:uru</td>
+    <td><span class="flag flagsp_uru"></span></td>
+      <td class="resultCol">0 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">40</td>
+    <td class="dateCol">24-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_crc"></span></td>
+    <td class="matchUp">crc:eng</td>
+    <td><span class="flag flagsp_eng"></span></td>
+      <td class="resultCol">0 - 0  </td>
+  </tr>
+        <tr>
+    <td class="numCol">41</td>
+    <td class="dateCol">25-Jun-14</td>
+  <td class="timeCol">13:00 PDT</td>
+    <td><span class="flag flagsp_hon"></span></td>
+    <td class="matchUp">hon:sui</td>
+    <td><span class="flag flagsp_sui"></span></td>
+      <td class="resultCol">0 - 3  </td>
+  </tr>
+        <tr>
+    <td class="numCol">42</td>
+    <td class="dateCol">25-Jun-14</td>
+  <td class="timeCol">13:00 PDT</td>
+    <td><span class="flag flagsp_ecu"></span></td>
+    <td class="matchUp">ecu:fra</td>
+    <td><span class="flag flagsp_fra"></span></td>
+      <td class="resultCol">0 - 0  </td>
+  </tr>
+        <tr>
+    <td class="numCol">43</td>
+    <td class="dateCol">25-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_nga"></span></td>
+    <td class="matchUp">nga:arg</td>
+    <td><span class="flag flagsp_arg"></span></td>
+      <td class="resultCol">2 - 3  </td>
+  </tr>
+        <tr>
+    <td class="numCol">44</td>
+    <td class="dateCol">25-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_bih"></span></td>
+    <td class="matchUp">bih:irn</td>
+    <td><span class="flag flagsp_irn"></span></td>
+      <td class="resultCol">3 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">45</td>
+    <td class="dateCol">26-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_usa"></span></td>
+    <td class="matchUp">usa:ger</td>
+    <td><span class="flag flagsp_ger"></span></td>
+      <td class="resultCol">0 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">46</td>
+    <td class="dateCol">26-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_por"></span></td>
+    <td class="matchUp">por:gha</td>
+    <td><span class="flag flagsp_gha"></span></td>
+      <td class="resultCol">2 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">47</td>
+    <td class="dateCol">26-Jun-14</td>
+  <td class="timeCol">13:00 PDT</td>
+    <td><span class="flag flagsp_kor"></span></td>
+    <td class="matchUp">kor:bel</td>
+    <td><span class="flag flagsp_bel"></span></td>
+      <td class="resultCol">0 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">48</td>
+    <td class="dateCol">26-Jun-14</td>
+  <td class="timeCol">13:00 PDT</td>
+    <td><span class="flag flagsp_alg"></span></td>
+    <td class="matchUp">alg:rus</td>
+    <td><span class="flag flagsp_rus"></span></td>
+      <td class="resultCol">1 - 1  </td>
+  </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="knockoutRounds">
+    <h1>Knockout Rounds</h1>
+    <table class="matches striped">
+      <caption>Round of 16</caption>
+<thead>
+<tr>
+    <th class="numCol">Match</th>
+    <th class="dateCol">Date</th>
+  <th class="timeCol">Time</th>
+  <th></th>
+  <th class="matchUp">Teams</th>
+  <th></th>
+  <th class="resultCol">Result</th>
+</tr>
+</thead>
+      <tbody>
+        <tr>
+    <td class="numCol">49</td>
+    <td class="dateCol">28-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_bra"></span></td>
+    <td class="matchUp">bra:chi</td>
+    <td><span class="flag flagsp_chi"></span></td>
+      <td class="resultCol">1 - 1  (3 - 2) </td>
+  </tr>
+        <tr>
+    <td class="numCol">50</td>
+    <td class="dateCol">28-Jun-14</td>
+  <td class="timeCol">13:00 PDT</td>
+    <td><span class="flag flagsp_col"></span></td>
+    <td class="matchUp">col:uru</td>
+    <td><span class="flag flagsp_uru"></span></td>
+      <td class="resultCol">2 - 0  </td>
+  </tr>
+        <tr>
+    <td class="numCol">51</td>
+    <td class="dateCol">29-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_ned"></span></td>
+    <td class="matchUp">ned:mex</td>
+    <td><span class="flag flagsp_mex"></span></td>
+      <td class="resultCol">2 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">52</td>
+    <td class="dateCol">29-Jun-14</td>
+  <td class="timeCol">13:00 PDT</td>
+    <td><span class="flag flagsp_crc"></span></td>
+    <td class="matchUp">crc:gre</td>
+    <td><span class="flag flagsp_gre"></span></td>
+      <td class="resultCol">1 - 1  (5 - 3) </td>
+  </tr>
+        <tr>
+    <td class="numCol">53</td>
+    <td class="dateCol">30-Jun-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_fra"></span></td>
+    <td class="matchUp">fra:nga</td>
+    <td><span class="flag flagsp_nga"></span></td>
+      <td class="resultCol">2 - 0  </td>
+  </tr>
+        <tr>
+    <td class="numCol">54</td>
+    <td class="dateCol">30-Jun-14</td>
+  <td class="timeCol">13:00 PDT</td>
+    <td><span class="flag flagsp_ger"></span></td>
+    <td class="matchUp">ger:alg</td>
+    <td><span class="flag flagsp_alg"></span></td>
+      <td class="resultCol">2 - 1  ET</td>
+  </tr>
+        <tr>
+    <td class="numCol">55</td>
+    <td class="dateCol">01-Jul-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_arg"></span></td>
+    <td class="matchUp">arg:sui</td>
+    <td><span class="flag flagsp_sui"></span></td>
+      <td class="resultCol">1 - 0  ET</td>
+  </tr>
+        <tr>
+    <td class="numCol">56</td>
+    <td class="dateCol">01-Jul-14</td>
+  <td class="timeCol">13:00 PDT</td>
+    <td><span class="flag flagsp_bel"></span></td>
+    <td class="matchUp">bel:usa</td>
+    <td><span class="flag flagsp_usa"></span></td>
+      <td class="resultCol">2 - 1  ET</td>
+  </tr>
+      </tbody>
+    </table>
+    <table class="matches striped">
+      <caption>Quarter-finals</caption>
+<thead>
+<tr>
+    <th class="numCol">Match</th>
+    <th class="dateCol">Date</th>
+  <th class="timeCol">Time</th>
+  <th></th>
+  <th class="matchUp">Teams</th>
+  <th></th>
+  <th class="resultCol">Result</th>
+</tr>
+</thead>
+      <tbody>
+        <tr>
+    <td class="numCol">57</td>
+    <td class="dateCol">04-Jul-14</td>
+  <td class="timeCol">13:00 PDT</td>
+    <td><span class="flag flagsp_bra"></span></td>
+    <td class="matchUp">bra:col</td>
+    <td><span class="flag flagsp_col"></span></td>
+      <td class="resultCol">2 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">58</td>
+    <td class="dateCol">04-Jul-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_fra"></span></td>
+    <td class="matchUp">fra:ger</td>
+    <td><span class="flag flagsp_ger"></span></td>
+      <td class="resultCol">0 - 1  </td>
+  </tr>
+        <tr>
+    <td class="numCol">59</td>
+    <td class="dateCol">05-Jul-14</td>
+  <td class="timeCol">13:00 PDT</td>
+    <td><span class="flag flagsp_ned"></span></td>
+    <td class="matchUp">ned:crc</td>
+    <td><span class="flag flagsp_crc"></span></td>
+      <td class="resultCol">0 - 0  (4 - 3) </td>
+  </tr>
+        <tr>
+    <td class="numCol">60</td>
+    <td class="dateCol">05-Jul-14</td>
+  <td class="timeCol">09:00 PDT</td>
+    <td><span class="flag flagsp_arg"></span></td>
+    <td class="matchUp">arg:bel</td>
+    <td><span class="flag flagsp_bel"></span></td>
+      <td class="resultCol">1 - 0  </td>
+  </tr>
+      </tbody>
+    </table>
+    <table class="matches striped">
+      <caption>Semi-finals</caption>
+<thead>
+<tr>
+    <th class="numCol">Match</th>
+    <th class="dateCol">Date</th>
+  <th class="timeCol">Time</th>
+  <th></th>
+  <th class="matchUp">Teams</th>
+  <th></th>
+  <th class="resultCol">Result</th>
+</tr>
+</thead>
+      <tbody>
+        <tr>
+    <td class="numCol">61</td>
+    <td class="dateCol">08-Jul-14</td>
+  <td class="timeCol">13:00 PDT</td>
+    <td><span class="flag flagsp_bra"></span></td>
+    <td class="matchUp">bra:ger</td>
+    <td><span class="flag flagsp_ger"></span></td>
+      <td class="resultCol">1 - 7  </td>
+  </tr>
+        <tr>
+    <td class="numCol">62</td>
+    <td class="dateCol">09-Jul-14</td>
+  <td class="timeCol">13:00 PDT</td>
+    <td><span class="flag flagsp_ned"></span></td>
+    <td class="matchUp">ned:arg</td>
+    <td><span class="flag flagsp_arg"></span></td>
+      <td class="resultCol">0 - 0  (2 - 4) </td>
+  </tr>
+      </tbody>
+    </table>
+    <table class="matches striped">
+      <caption>3rd Place</caption>
+<thead>
+<tr>
+    <th class="numCol">Match</th>
+    <th class="dateCol">Date</th>
+  <th class="timeCol">Time</th>
+  <th></th>
+  <th class="matchUp">Teams</th>
+  <th></th>
+  <th class="resultCol">Result</th>
+</tr>
+</thead>
+      <tbody>
+        <tr>
+    <td class="numCol">63</td>
+    <td class="dateCol">12-Jul-14</td>
+  <td class="timeCol">13:00 PDT</td>
+    <td><span class="flag flagsp_bra"></span></td>
+    <td class="matchUp">bra:ned</td>
+    <td><span class="flag flagsp_ned"></span></td>
+      <td class="resultCol">0 - 3  </td>
+  </tr>
+      </tbody>
+    </table>
+    <table class="matches striped">
+      <caption>Final</caption>
+<thead>
+<tr>
+    <th class="numCol">Match</th>
+    <th class="dateCol">Date</th>
+  <th class="timeCol">Time</th>
+  <th></th>
+  <th class="matchUp">Teams</th>
+  <th></th>
+  <th class="resultCol">Result</th>
+</tr>
+</thead>
+      <tbody>
+        <tr>
+    <td class="numCol">64</td>
+    <td class="dateCol">13-Jul-14</td>
+  <td class="timeCol">12:00 PDT</td>
+    <td><span class="flag flagsp_ger"></span></td>
+    <td class="matchUp">ger:arg</td>
+    <td><span class="flag flagsp_arg"></span></td>
+      <td class="resultCol">1 - 0  ET</td>
+  </tr>
+      </tbody>
+    </table>
+  </div>
+</div>  <div class="content summary">
+  <div class="leftColumn">
+    <table id="countries" class="striped">
+      <caption>Teams</caption>
+      <thead>
+      <tr>
+        <th class="teamCol">Team</th>
+        <th class="numCol" title="Number of Times Picked">Pi</th>
+        <th class="numCol" title="Matches Played">MP</th>
+        <th class="numCol" title="Wins">W</th>
+        <th class="numCol" title="Draws">D</th>
+        <th class="numCol" title="Losses">L</th>
+        <th class="numCol" title="Goals Scored">GF</th>
+        <th class="numCol" title="Goals Against">GA</th>
+        <th class="numCol" title="Pool Points">PP</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr id="country18">
+        <td class="teamCol">Algeria</td>
+        <td class="numCol">0</td>
+        <td class="numCol">4</td>
+        <td class="numCol">1</td>
+        <td class="numCol">1</td>
+        <td class="numCol">2</td>
+        <td class="numCol">7</td>
+        <td class="numCol">7</td>
+        <td class="numCol">11</td>
+      </tr>
+      <tr id="country19">
+        <td class="teamCol">Argentina</td>
+        <td class="numCol">4</td>
+        <td class="numCol">7</td>
+        <td class="numCol">6</td>
+        <td class="numCol">0</td>
+        <td class="numCol">1</td>
+        <td class="numCol">8</td>
+        <td class="numCol">4</td>
+        <td class="numCol">26</td>
+      </tr>
+      <tr id="country20">
+        <td class="teamCol">Australia</td>
+        <td class="numCol">0</td>
+        <td class="numCol">3</td>
+        <td class="numCol">0</td>
+        <td class="numCol">0</td>
+        <td class="numCol">3</td>
+        <td class="numCol">3</td>
+        <td class="numCol">9</td>
+        <td class="numCol">3</td>
+      </tr>
+      <tr id="country41">
+        <td class="teamCol">Belgium</td>
+        <td class="numCol">4</td>
+        <td class="numCol">5</td>
+        <td class="numCol">4</td>
+        <td class="numCol">0</td>
+        <td class="numCol">1</td>
+        <td class="numCol">6</td>
+        <td class="numCol">3</td>
+        <td class="numCol">18</td>
+      </tr>
+      <tr id="country42">
+        <td class="teamCol">Bosnia-Herzegovina</td>
+        <td class="numCol">1</td>
+        <td class="numCol">3</td>
+        <td class="numCol">1</td>
+        <td class="numCol">0</td>
+        <td class="numCol">2</td>
+        <td class="numCol">4</td>
+        <td class="numCol">4</td>
+        <td class="numCol">7</td>
+      </tr>
+      <tr id="country37">
+        <td class="teamCol">Brazil</td>
+        <td class="numCol">5</td>
+        <td class="numCol">7</td>
+        <td class="numCol">4</td>
+        <td class="numCol">1</td>
+        <td class="numCol">2</td>
+        <td class="numCol">11</td>
+        <td class="numCol">14</td>
+        <td class="numCol">24</td>
+      </tr>
+      <tr id="country25">
+        <td class="teamCol">Cameroon</td>
+        <td class="numCol">2</td>
+        <td class="numCol">3</td>
+        <td class="numCol">0</td>
+        <td class="numCol">0</td>
+        <td class="numCol">3</td>
+        <td class="numCol">1</td>
+        <td class="numCol">9</td>
+        <td class="numCol">1</td>
+      </tr>
+      <tr id="country38">
+        <td class="teamCol">Chile</td>
+        <td class="numCol">0</td>
+        <td class="numCol">4</td>
+        <td class="numCol">2</td>
+        <td class="numCol">0</td>
+        <td class="numCol">2</td>
+        <td class="numCol">6</td>
+        <td class="numCol">4</td>
+        <td class="numCol">12</td>
+      </tr>
+      <tr id="country44">
+        <td class="teamCol">Colombia</td>
+        <td class="numCol">0</td>
+        <td class="numCol">5</td>
+        <td class="numCol">4</td>
+        <td class="numCol">0</td>
+        <td class="numCol">1</td>
+        <td class="numCol">12</td>
+        <td class="numCol">4</td>
+        <td class="numCol">24</td>
+      </tr>
+      <tr id="country43">
+        <td class="teamCol">Costa Rica</td>
+        <td class="numCol">3</td>
+        <td class="numCol">5</td>
+        <td class="numCol">3</td>
+        <td class="numCol">1</td>
+        <td class="numCol">1</td>
+        <td class="numCol">5</td>
+        <td class="numCol">2</td>
+        <td class="numCol">15</td>
+      </tr>
+      <tr id="country3">
+        <td class="teamCol">Croatia</td>
+        <td class="numCol">3</td>
+        <td class="numCol">3</td>
+        <td class="numCol">1</td>
+        <td class="numCol">0</td>
+        <td class="numCol">2</td>
+        <td class="numCol">6</td>
+        <td class="numCol">6</td>
+        <td class="numCol">9</td>
+      </tr>
+      <tr id="country26">
+        <td class="teamCol">C&ocirc;te d'Ivoire</td>
+        <td class="numCol">4</td>
+        <td class="numCol">3</td>
+        <td class="numCol">1</td>
+        <td class="numCol">0</td>
+        <td class="numCol">2</td>
+        <td class="numCol">4</td>
+        <td class="numCol">5</td>
+        <td class="numCol">7</td>
+      </tr>
+      <tr id="country45">
+        <td class="teamCol">Ecuador</td>
+        <td class="numCol">2</td>
+        <td class="numCol">3</td>
+        <td class="numCol">1</td>
+        <td class="numCol">1</td>
+        <td class="numCol">1</td>
+        <td class="numCol">3</td>
+        <td class="numCol">3</td>
+        <td class="numCol">7</td>
+      </tr>
+      <tr id="country6">
+        <td class="teamCol">England</td>
+        <td class="numCol">4</td>
+        <td class="numCol">3</td>
+        <td class="numCol">0</td>
+        <td class="numCol">1</td>
+        <td class="numCol">2</td>
+        <td class="numCol">2</td>
+        <td class="numCol">4</td>
+        <td class="numCol">3</td>
+      </tr>
+      <tr id="country7">
+        <td class="teamCol">France</td>
+        <td class="numCol">1</td>
+        <td class="numCol">5</td>
+        <td class="numCol">3</td>
+        <td class="numCol">1</td>
+        <td class="numCol">1</td>
+        <td class="numCol">10</td>
+        <td class="numCol">3</td>
+        <td class="numCol">20</td>
+      </tr>
+      <tr id="country8">
+        <td class="teamCol">Germany</td>
+        <td class="numCol">5</td>
+        <td class="numCol">7</td>
+        <td class="numCol">6</td>
+        <td class="numCol">1</td>
+        <td class="numCol">0</td>
+        <td class="numCol">18</td>
+        <td class="numCol">4</td>
+        <td class="numCol">37</td>
+      </tr>
+      <tr id="country27">
+        <td class="teamCol">Ghana</td>
+        <td class="numCol">3</td>
+        <td class="numCol">3</td>
+        <td class="numCol">0</td>
+        <td class="numCol">1</td>
+        <td class="numCol">2</td>
+        <td class="numCol">4</td>
+        <td class="numCol">6</td>
+        <td class="numCol">5</td>
+      </tr>
+      <tr id="country9">
+        <td class="teamCol">Greece</td>
+        <td class="numCol">1</td>
+        <td class="numCol">4</td>
+        <td class="numCol">1</td>
+        <td class="numCol">1</td>
+        <td class="numCol">2</td>
+        <td class="numCol">3</td>
+        <td class="numCol">5</td>
+        <td class="numCol">7</td>
+      </tr>
+      <tr id="country34">
+        <td class="teamCol">Honduras</td>
+        <td class="numCol">0</td>
+        <td class="numCol">3</td>
+        <td class="numCol">0</td>
+        <td class="numCol">0</td>
+        <td class="numCol">3</td>
+        <td class="numCol">1</td>
+        <td class="numCol">8</td>
+        <td class="numCol">1</td>
+      </tr>
+      <tr id="country46">
+        <td class="teamCol">Iran</td>
+        <td class="numCol">1</td>
+        <td class="numCol">3</td>
+        <td class="numCol">0</td>
+        <td class="numCol">1</td>
+        <td class="numCol">2</td>
+        <td class="numCol">1</td>
+        <td class="numCol">4</td>
+        <td class="numCol">2</td>
+      </tr>
+      <tr id="country2">
+        <td class="teamCol">Italy</td>
+        <td class="numCol">4</td>
+        <td class="numCol">3</td>
+        <td class="numCol">1</td>
+        <td class="numCol">0</td>
+        <td class="numCol">2</td>
+        <td class="numCol">2</td>
+        <td class="numCol">3</td>
+        <td class="numCol">5</td>
+      </tr>
+      <tr id="country21">
+        <td class="teamCol">Japan</td>
+        <td class="numCol">4</td>
+        <td class="numCol">3</td>
+        <td class="numCol">0</td>
+        <td class="numCol">1</td>
+        <td class="numCol">2</td>
+        <td class="numCol">2</td>
+        <td class="numCol">6</td>
+        <td class="numCol">3</td>
+      </tr>
+      <tr id="country23">
+        <td class="teamCol">Korea Republic</td>
+        <td class="numCol">2</td>
+        <td class="numCol">3</td>
+        <td class="numCol">0</td>
+        <td class="numCol">1</td>
+        <td class="numCol">2</td>
+        <td class="numCol">3</td>
+        <td class="numCol">6</td>
+        <td class="numCol">4</td>
+      </tr>
+      <tr id="country35">
+        <td class="teamCol">Mexico</td>
+        <td class="numCol">5</td>
+        <td class="numCol">4</td>
+        <td class="numCol">2</td>
+        <td class="numCol">1</td>
+        <td class="numCol">1</td>
+        <td class="numCol">5</td>
+        <td class="numCol">3</td>
+        <td class="numCol">12</td>
+      </tr>
+      <tr id="country10">
+        <td class="teamCol">Netherlands</td>
+        <td class="numCol">4</td>
+        <td class="numCol">7</td>
+        <td class="numCol">6</td>
+        <td class="numCol">0</td>
+        <td class="numCol">1</td>
+        <td class="numCol">15</td>
+        <td class="numCol">4</td>
+        <td class="numCol">33</td>
+      </tr>
+      <tr id="country28">
+        <td class="teamCol">Nigeria</td>
+        <td class="numCol">3</td>
+        <td class="numCol">4</td>
+        <td class="numCol">1</td>
+        <td class="numCol">1</td>
+        <td class="numCol">2</td>
+        <td class="numCol">3</td>
+        <td class="numCol">5</td>
+        <td class="numCol">7</td>
+      </tr>
+      <tr id="country12">
+        <td class="teamCol">Portugal</td>
+        <td class="numCol">1</td>
+        <td class="numCol">3</td>
+        <td class="numCol">1</td>
+        <td class="numCol">1</td>
+        <td class="numCol">1</td>
+        <td class="numCol">4</td>
+        <td class="numCol">7</td>
+        <td class="numCol">8</td>
+      </tr>
+      <tr id="country14">
+        <td class="teamCol">Russia</td>
+        <td class="numCol">3</td>
+        <td class="numCol">3</td>
+        <td class="numCol">0</td>
+        <td class="numCol">2</td>
+        <td class="numCol">1</td>
+        <td class="numCol">2</td>
+        <td class="numCol">3</td>
+        <td class="numCol">4</td>
+      </tr>
+      <tr id="country15">
+        <td class="teamCol">Spain</td>
+        <td class="numCol">3</td>
+        <td class="numCol">3</td>
+        <td class="numCol">1</td>
+        <td class="numCol">0</td>
+        <td class="numCol">2</td>
+        <td class="numCol">4</td>
+        <td class="numCol">7</td>
+        <td class="numCol">7</td>
+      </tr>
+      <tr id="country33">
+        <td class="teamCol">Switzerland</td>
+        <td class="numCol">0</td>
+        <td class="numCol">4</td>
+        <td class="numCol">2</td>
+        <td class="numCol">0</td>
+        <td class="numCol">2</td>
+        <td class="numCol">7</td>
+        <td class="numCol">7</td>
+        <td class="numCol">13</td>
+      </tr>
+      <tr id="country36">
+        <td class="teamCol">USA</td>
+        <td class="numCol">0</td>
+        <td class="numCol">4</td>
+        <td class="numCol">1</td>
+        <td class="numCol">1</td>
+        <td class="numCol">2</td>
+        <td class="numCol">5</td>
+        <td class="numCol">6</td>
+        <td class="numCol">9</td>
+      </tr>
+      <tr id="country40">
+        <td class="teamCol">Uruguay</td>
+        <td class="numCol">0</td>
+        <td class="numCol">4</td>
+        <td class="numCol">2</td>
+        <td class="numCol">0</td>
+        <td class="numCol">2</td>
+        <td class="numCol">4</td>
+        <td class="numCol">6</td>
+        <td class="numCol">10</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="rightColumn">
+        <table class="country country18 striped">
+      <caption>Algeria</caption>
+      <tbody>
+            </tbody>
+    </table>
+        <table class="country country19 striped">
+      <caption>Argentina</caption>
+      <tbody>
+            <tr>
+        <td>Dan</td>
+      </tr>
+            <tr>
+        <td>Farshad</td>
+      </tr>
+            <tr>
+        <td>Med</td>
+      </tr>
+            <tr>
+        <td>Strobie</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country20 striped">
+      <caption>Australia</caption>
+      <tbody>
+            </tbody>
+    </table>
+        <table class="country country41 striped">
+      <caption>Belgium</caption>
+      <tbody>
+            <tr>
+        <td>Dan</td>
+      </tr>
+            <tr>
+        <td>Farshad</td>
+      </tr>
+            <tr>
+        <td>Ralphie</td>
+      </tr>
+            <tr>
+        <td>Strobie</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country42 striped">
+      <caption>Bosnia-Herzegovina</caption>
+      <tbody>
+            <tr>
+        <td>Farshad</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country37 striped">
+      <caption>Brazil</caption>
+      <tbody>
+            <tr>
+        <td>Chris</td>
+      </tr>
+            <tr>
+        <td>Farshad</td>
+      </tr>
+            <tr>
+        <td>Med</td>
+      </tr>
+            <tr>
+        <td>Ralphie</td>
+      </tr>
+            <tr>
+        <td>Strobie</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country25 striped">
+      <caption>Cameroon</caption>
+      <tbody>
+            <tr>
+        <td>Chris</td>
+      </tr>
+            <tr>
+        <td>Med</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country38 striped">
+      <caption>Chile</caption>
+      <tbody>
+            </tbody>
+    </table>
+        <table class="country country44 striped">
+      <caption>Colombia</caption>
+      <tbody>
+            </tbody>
+    </table>
+        <table class="country country43 striped">
+      <caption>Costa Rica</caption>
+      <tbody>
+            <tr>
+        <td>Chris</td>
+      </tr>
+            <tr>
+        <td>Dan</td>
+      </tr>
+            <tr>
+        <td>Med</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country3 striped">
+      <caption>Croatia</caption>
+      <tbody>
+            <tr>
+        <td>Chris</td>
+      </tr>
+            <tr>
+        <td>Med</td>
+      </tr>
+            <tr>
+        <td>Strobie</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country26 striped">
+      <caption>C&ocirc;te d'Ivoire</caption>
+      <tbody>
+            <tr>
+        <td>Chris</td>
+      </tr>
+            <tr>
+        <td>Dan</td>
+      </tr>
+            <tr>
+        <td>Med</td>
+      </tr>
+            <tr>
+        <td>Ralphie</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country45 striped">
+      <caption>Ecuador</caption>
+      <tbody>
+            <tr>
+        <td>Chris</td>
+      </tr>
+            <tr>
+        <td>Strobie</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country6 striped">
+      <caption>England</caption>
+      <tbody>
+            <tr>
+        <td>Chris</td>
+      </tr>
+            <tr>
+        <td>Med</td>
+      </tr>
+            <tr>
+        <td>Ralphie</td>
+      </tr>
+            <tr>
+        <td>Strobie</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country7 striped">
+      <caption>France</caption>
+      <tbody>
+            <tr>
+        <td>Med</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country8 striped">
+      <caption>Germany</caption>
+      <tbody>
+            <tr>
+        <td>Chris</td>
+      </tr>
+            <tr>
+        <td>Dan</td>
+      </tr>
+            <tr>
+        <td>Farshad</td>
+      </tr>
+            <tr>
+        <td>Ralphie</td>
+      </tr>
+            <tr>
+        <td>Strobie</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country27 striped">
+      <caption>Ghana</caption>
+      <tbody>
+            <tr>
+        <td>Chris</td>
+      </tr>
+            <tr>
+        <td>Farshad</td>
+      </tr>
+            <tr>
+        <td>Med</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country9 striped">
+      <caption>Greece</caption>
+      <tbody>
+            <tr>
+        <td>Chris</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country34 striped">
+      <caption>Honduras</caption>
+      <tbody>
+            </tbody>
+    </table>
+        <table class="country country46 striped">
+      <caption>Iran</caption>
+      <tbody>
+            <tr>
+        <td>Dan</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country2 striped">
+      <caption>Italy</caption>
+      <tbody>
+            <tr>
+        <td>Chris</td>
+      </tr>
+            <tr>
+        <td>Dan</td>
+      </tr>
+            <tr>
+        <td>Farshad</td>
+      </tr>
+            <tr>
+        <td>Med</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country21 striped">
+      <caption>Japan</caption>
+      <tbody>
+            <tr>
+        <td>Dan</td>
+      </tr>
+            <tr>
+        <td>Farshad</td>
+      </tr>
+            <tr>
+        <td>Ralphie</td>
+      </tr>
+            <tr>
+        <td>Strobie</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country23 striped">
+      <caption>Korea Republic</caption>
+      <tbody>
+            <tr>
+        <td>Ralphie</td>
+      </tr>
+            <tr>
+        <td>Strobie</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country35 striped">
+      <caption>Mexico</caption>
+      <tbody>
+            <tr>
+        <td>Dan</td>
+      </tr>
+            <tr>
+        <td>Farshad</td>
+      </tr>
+            <tr>
+        <td>Med</td>
+      </tr>
+            <tr>
+        <td>Ralphie</td>
+      </tr>
+            <tr>
+        <td>Strobie</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country10 striped">
+      <caption>Netherlands</caption>
+      <tbody>
+            <tr>
+        <td>Dan</td>
+      </tr>
+            <tr>
+        <td>Farshad</td>
+      </tr>
+            <tr>
+        <td>Ralphie</td>
+      </tr>
+            <tr>
+        <td>Strobie</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country28 striped">
+      <caption>Nigeria</caption>
+      <tbody>
+            <tr>
+        <td>Farshad</td>
+      </tr>
+            <tr>
+        <td>Ralphie</td>
+      </tr>
+            <tr>
+        <td>Strobie</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country12 striped">
+      <caption>Portugal</caption>
+      <tbody>
+            <tr>
+        <td>Dan</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country14 striped">
+      <caption>Russia</caption>
+      <tbody>
+            <tr>
+        <td>Dan</td>
+      </tr>
+            <tr>
+        <td>Farshad</td>
+      </tr>
+            <tr>
+        <td>Ralphie</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country15 striped">
+      <caption>Spain</caption>
+      <tbody>
+            <tr>
+        <td>Chris</td>
+      </tr>
+            <tr>
+        <td>Med</td>
+      </tr>
+            <tr>
+        <td>Ralphie</td>
+      </tr>
+            </tbody>
+    </table>
+        <table class="country country33 striped">
+      <caption>Switzerland</caption>
+      <tbody>
+            </tbody>
+    </table>
+        <table class="country country36 striped">
+      <caption>USA</caption>
+      <tbody>
+            </tbody>
+    </table>
+        <table class="country country40 striped">
+      <caption>Uruguay</caption>
+      <tbody>
+            </tbody>
+    </table>
+      </div>
+</div>
+</div>
+<div id="footer">
+  <p>Last updated: Jul 14, 2014 9:58:54 PM</p>
+
+  <p>Webmaster: <a href="mailto:danny@ciarniello.ca">Danny Ciarniello</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body
+{
+background-color: white;
+background-image: url("leftLogo.gif");
+background-repeat: no-repeat;
+background-position: left top
+}
+
+.active
+{
+color : black;
+}
+
+.eliminated
+{
+color : lightgrey;
+}
+
+td
+{
+padding-left : 5px;
+padding-right : 5px;
+}
+
+td.logo
+{
+padding-right : 0px;
+}
+
+.header
+{
+text-decoration : underline;
+vertical-align : baseline;
+}
+
+sup
+{
+text-decoration : none;
+}
