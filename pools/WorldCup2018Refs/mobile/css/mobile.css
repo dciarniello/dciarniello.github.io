@@ -63,7 +63,7 @@ td.matchUp {
     text-align: center;
     font-size: 28px;  
     font-weight: bold;
-    color: #0E6600;
+    color: #0F417C;
 }
 
 #matches {
@@ -75,7 +75,7 @@ td.matchUp {
     border-color: #778899;  /* lightslategray */
     border-width: 1px;
     font-weight: bold;
-    background-color: #0E6600; /* orange */
+    background-color: #0F417C; /* orange */
     color: white;
     font-size: 14px;
     padding-top: 2px;
