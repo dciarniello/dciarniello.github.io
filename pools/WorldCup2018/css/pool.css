@@ -43,12 +43,12 @@ a {
 /******* MENU *******/  
 #container{  
     margin: 2em auto;  
-    width: 750px;  
+    width: 800px;  
 }  
 #container ul{  
     list-style: none;  
     list-style-position: outside;  
-    margin-left: 125px;
+    margin-left: 100px;
 }  
 #container ul.menu li{  
     float: left;  
@@ -94,7 +94,7 @@ a {
     display: block;  
 }  
 
-.content.summary, .content.groups, .content.matches {  
+.content.summary, .content.groups, .content.matches, .content.dream {  
     display: none;  
 }
   
@@ -157,7 +157,7 @@ th.matchUp {
 
 #todayMatches {
     margin-bottom: 10px;
-    margin-left: 175px;
+    margin-left: 200px;
 }
 
 #todayMatches table {
@@ -196,6 +196,19 @@ caption {
     display: none;
 }
 
+.dreamTeam table {
+    width: 275px;
+}
+
+.dreamTeam table:first-child {
+    border: solid 1px #778899;
+    border-top: none;
+}
+
+.dreamTeam {
+    margin-left: 0 auto;
+}
+
 .eliminated {
   color: #A0A0A0; /* lightgrey */
 }
@@ -215,7 +228,7 @@ thead {
 
 table.group {
     float: left;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-bottom: 5px;
     border: solid 1px #778899;
     border-top: none;
@@ -232,7 +245,7 @@ table.group {
 }
 
 .content.standings {
-    padding-left: 50px;
+    padding-left: 75px;
 }
 
 .group tr {
@@ -276,7 +289,7 @@ table.group {
     text-align: right;
     font-size: x-small;
     font-style: italic;
-    width:750px;
+    width:800px;
     margin: 0 auto;
     margin-top: -10px;
     line-height: 12px;
@@ -287,11 +300,15 @@ table.matches {
     margin: 0 auto;
 }
 
+.content.dream table {
+    margin: 0 auto;
+}
+
 #groupStage > table {
     margin-bottom: 10px;
 }
 
-#groupStage h1, #knockoutRounds h1 {
+#groupStage h1, #knockoutRounds h1, div.dreamTeam h1 {
     color: #0F417C;
     text-align: center;
     font-size: 18px;
@@ -302,12 +319,13 @@ table.matches {
 
 #countries {
     width: 350px;
+    margin-left: 25px;
     border: solid 1px #778899;
     border-top: none;
 }
 
 .country {
-    margin-left: 100px;
+    margin-left: 125px;
     width: 150px;
     border: solid 1px #778899;
     border-top: none;
@@ -341,7 +359,7 @@ table.matches {
 	width: 333px;
     }
 
-    .standings .leftColumn, .summary .rightColumn, .matches {
+    .standings .leftColumn, .summary .rightColumn, .matches, .dream {
 	overflow-y: auto;
     }
 }
