@@ -209,6 +209,11 @@ caption {
     margin-left: 0 auto;
 }
 
+.dreamcaption {
+    text-align: center;
+    margin-top: 10px;
+}
+
 .eliminated {
   color: #A0A0A0; /* lightgrey */
 }
