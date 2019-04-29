@@ -48,7 +48,7 @@ a {
 #container ul{  
     list-style: none;  
     list-style-position: outside;  
-    margin-left: 125px;
+    margin-left: 65px;
 }  
 #container ul.menu li{  
     float: left;  
@@ -94,7 +94,7 @@ a {
     display: block;  
 }  
 
-.content.summary, .content.groups, .content.matches {  
+.content.summary, .content.groups, .content.matches, .content.dream {  
     display: none;  
 }
   
@@ -196,6 +196,24 @@ caption {
     display: none;
 }
 
+.dreamTeam table {
+    width: 275px;
+}
+
+.dreamTeam table:first-child {
+    border: solid 1px #778899;
+    border-top: none;
+}
+
+.dreamTeam {
+    margin-left: 0 auto;
+}
+
+.dreamcaption {
+    text-align: center;
+    margin-top: 10px;
+}
+
 .eliminated {
   color: #A0A0A0; /* lightgrey */
 }
@@ -287,11 +305,15 @@ table.matches {
     margin: 0 auto;
 }
 
+.content.dream table {
+    margin: 0 auto;
+}
+
 #groupStage > table {
     margin-bottom: 10px;
 }
 
-#groupStage h1, #knockoutRounds h1 {
+#groupStage h1, #knockoutRounds h1, div.dreamTeam h1 {
     color: #003768;
     text-align: center;
     font-size: 18px;
@@ -341,7 +363,7 @@ table.matches {
 	width: 333px;
     }
 
-    .standings .leftColumn, .summary .rightColumn, .matches {
+    .standings .leftColumn, .summary .rightColumn, .matches, .dream {
 	overflow-y: auto;
     }
 }
