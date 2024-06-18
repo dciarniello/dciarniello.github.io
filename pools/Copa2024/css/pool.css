@@ -1,0 +1,369 @@
+@CHARSET "UTF-8";  
+/******* GENERAL RESET *******/  
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,  
+font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,  
+tfoot, thead, tr, th, td {  
+    border:0pt none;  
+    font-family:inherit;  
+    font-size: 100%;  
+    font-style:inherit;  
+    font-weight:inherit;  
+    margin:0pt;  
+    padding:0pt;  
+    vertical-align:baseline;  
+}  
+body{  
+    background: #fff;  
+    background-image: url("../back.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    line-height:16px;  
+    font-size: 14px;  
+    font-family: "Liberation Sans", "Nimbus Sans L", "FreeSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin:0pt;  
+    cursor:default;  
+}  
+
+html,body{  
+    text-align: center;  
+}  
+
+.clear{  
+    clear: both;  
+    height: 0;  
+    visibility: hidden;  
+    display: block;  
+} 
+ 
+a {  
+    text-decoration: none;  
+}  
+/******* GENERAL RESET *******/  
+/******* MENU *******/  
+#container{  
+    margin: 2em auto;  
+    width: 750px;  
+}  
+#container ul{  
+    list-style: none;  
+    list-style-position: outside;  
+    margin-left: 65px;
+}  
+#container ul.menu li{  
+    float: left;  
+    margin-right: 5px;  
+    margin-bottom: -1px;  
+    font-weight: 700;  
+    display: block;  
+    padding: 5px 10px 5px 10px;  
+    background: #efefef;  
+    margin-bottom: -1px;  
+    border: 1px solid #d0ccc9;
+    border-width: 1px 1px 1px 1px;  
+    position: relative;  
+    color: #898989;  
+    cursor: pointer;  
+}  
+#container ul.menu li.active{  
+    background: #fff;  
+    top: 1px;  
+    border-bottom: 0;
+    color: #16639E;  
+}  
+/******* /MENU *******/  
+/******* CONTENT *******/  
+.content{  
+    margin: 0pt auto;  
+    border: 1px solid #d0ccc9;
+    text-align: left;  
+    padding: 10px;  
+    padding-bottom: 20px;  
+    font-size: 14px;  
+}  
+.content h1{  
+    line-height: 1em;  
+    vertical-align: middle;  
+    height: 48px;  
+    padding: 10px 10px 10px 52px;  
+    font-size: 32px;  
+    font-weight: bold;
+}  
+/******* /CONTENT *******/  
+.content.standings {  
+    display: block;  
+}  
+
+.content.summary, .content.groups, .content.matches, .content.dream {  
+    display: none;  
+}
+  
+.leftColumn {
+    float: left;
+    width: 300px;
+} 
+
+.rightColumn {
+    margin-left: 300px;
+}
+
+.summary .rightColumn {
+    margin-left: 350px;
+}
+
+.matchUp {
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.timeCol, .resultCol, .dateCol {
+    text-align: center;
+    width: 100px;
+}
+
+th.matchUp {
+    text-transform: none;
+}
+
+#container > h1 {
+    color: #16639E;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#poolStandings tbody tr td + td:hover, #countries tbody tr td:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#poolStandings tbody tr td + td + td:hover, #countries tbody tr td +td:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+#poolStandings, #goals {
+    width: 275px;
+    margin-bottom: 10px;
+}
+
+#poolStandings {
+    border: solid 1px #778899;
+    border-top: none;
+}
+
+#todayMatches {
+    margin-bottom: 10px;
+    margin-left: 175px;
+}
+
+#todayMatches table {
+    width: 300px;
+    border: solid 1px #778899;
+    border-top: none;
+}
+
+caption {
+    border-bottom-style: solid;
+    border-color: #778899;  /* lightslategray */
+    border-width: 1px;
+    font-weight: bold;
+    background-color: #16639E;
+    color: white;
+}
+
+.entry table + table caption {
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: normal;
+}
+
+.entry table {
+    width: 275px;
+}
+
+.entry table:first-child {
+    border: solid 1px #778899;
+    border-top: none;
+}
+
+.entry {
+    margin-left: 75px;
+    display: none;
+}
+
+.dreamTeam table {
+    width: 275px;
+}
+
+.dreamTeam table:first-child {
+    border: solid 1px #778899;
+    border-top: none;
+}
+
+.dreamTeam {
+    margin-left: 0 auto;
+}
+
+.dreamcaption {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.eliminated {
+  color: #A0A0A0; /* lightgrey */
+}
+
+.striped tbody tr:nth-child(odd) {
+    background-color: #0C93A6;
+}
+
+table {
+    border-spacing: 0;
+    padding: 1px;
+}
+
+thead {
+    font-weight: bold;
+}
+
+table.group {
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    border: solid 1px #778899;
+    border-top: none;
+    width: 300px;
+}
+
+.content {
+    padding-left: 55px;
+}
+
+.content.matches {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.content.standings {
+    padding-left: 50px;
+}
+
+.group tr {
+    height: 19px;
+}
+
+.points {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.rank {
+    text-align: right;
+    padding-right: 5px;
+    width: 24px;
+}
+
+.numCol {
+    text-align: center;
+    width: .5em;
+    padding: 1px 6px;
+}
+
+.teamCol {
+    text-align: left;
+    width: 145px;
+    padding-left: 5px;
+}
+
+.group .teamCol {
+    width: 170px;
+    padding-left: 5px;
+}
+
+.group .numCol {
+    width: 1.43em;
+    padding: 1px;
+}
+
+#footer {
+    text-align: right;
+    font-size: x-small;
+    font-style: italic;
+    width:750px;
+    margin: 0 auto;
+    margin-top: -10px;
+    line-height: 12px;
+}
+
+table.matches {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.content.dream table {
+    margin: 0 auto;
+}
+
+#groupStage > table {
+    margin-bottom: 10px;
+}
+
+#groupStage h1, #knockoutRounds h1 {
+    color: #16639E;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0;
+    height: 25px;
+}
+
+#countries {
+    width: 350px;
+    border: solid 1px #778899;
+    border-top: none;
+}
+
+.country {
+    margin-left: 100px;
+    width: 150px;
+    border: solid 1px #778899;
+    border-top: none;
+    display: none;
+}
+
+.country td {
+    padding-left: 5px;
+}
+
+.tiebreakers {
+    margin-top: 10px;
+}
+
+.tieValue {
+    text-align: right;
+}
+
+@media screen and (min-device-width:801px) {
+    .standings .leftColumn {
+	height: 500px;
+    }
+
+    .content {
+	height: 600px;
+	overflow: hidden;
+    }
+
+    .summary .rightColumn {
+	height: 500px;
+	width: 333px;
+    }
+
+    .standings .leftColumn, .summary .rightColumn, .matches, .dream {
+	overflow-y: auto;
+    }
+}
