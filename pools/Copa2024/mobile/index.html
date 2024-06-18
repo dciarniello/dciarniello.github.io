@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>2024 Copa America Pool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/mobile.css"/>
+  <link rel="stylesheet" href="../css/flags.css"/>
+  <script src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="main">
+  <div data-role="header" data-theme="b">
+    <h1>2024 Copa America Pool</h1>
+    <a href="../?desktop=true" class="ui-btn-right" data-role="button" data-icon="home" rel="external">Desktop</a>
+  </div>
+  <div data-role="content">
+    <ul data-role="listview" data-theme="c">
+      <li><a data-transition="slide" href="#standings">Pool Standings</a></li>
+      <li><a data-transition="slide" href="#matches">Matches</a></li>
+      <li><a data-transition="slide" href="#groups">Group Standings</a></li>
+      <li><a data-transition="slide" href="#summary">Pool Summary</a></li>
+    </ul>
+  </div>
+</div>
+
+<div data-role="page" id="standings">
+  <div data-role="header" data-theme="b">
+    <a href="#" data-role="button" data-icon="arrow-l" data-rel="back">Back</a>
+
+    <h1>Pool Standings</h1>
+    <a href="../?desktop=true" data-role="button" data-icon="home" rel="external">Desktop</a>
+  </div>
+  <div data-role="content">
+<div data-role="collapsible-set" data-theme="c" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+    Pool standings will appear once the tournament has started
+</div>  </div>
+</div>
+
+<div data-role="page" id="matches">
+  <div data-role="header" data-theme="b">
+    <a href="#" data-role="button" data-icon="arrow-l" data-rel="back">Back</a>
+
+    <h1>Matches</h1>
+    <a href="../?desktop=true" data-role="button" data-icon="home" rel="external">Desktop</a>
+  </div>
+  <div data-role="content">
+<div class="content matches">
+  <div id="groupStage">
+    <h1>Group Stage</h1>
+      <table class="matches striped">
+<caption>Upcoming Matches</caption>
+<thead>
+<tr>
+  <th class="dateCol">Date</th>
+  <th class="timeCol">Time</th>
+  <th></th>
+  <th class="matchUp">Teams</th>
+  <th></th>
+  <th class="resultCol">Result</th>
+</tr>
+</thead>
+        <tbody>
+<tr>
+  <td class="dateCol">20-Jun-24</td>
+  <td class="timeCol">17:00 PDT</td>
+    <td><span class="flag flagsp_arg"></span></td>
+  <td class="matchUp">arg:can</td>
+    <td><span class="flag flagsp_can"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">21-Jun-24</td>
+  <td class="timeCol">17:00 PDT</td>
+    <td><span class="flag flagsp_per"></span></td>
+  <td class="matchUp">per:chi</td>
+    <td><span class="flag flagsp_chi"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">22-Jun-24</td>
+  <td class="timeCol">18:00 PDT</td>
+    <td><span class="flag flagsp_mex"></span></td>
+  <td class="matchUp">mex:jam</td>
+    <td><span class="flag flagsp_jam"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">22-Jun-24</td>
+  <td class="timeCol">15:00 PDT</td>
+    <td><span class="flag flagsp_ecu"></span></td>
+  <td class="matchUp">ecu:ven</td>
+    <td><span class="flag flagsp_ven"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">23-Jun-24</td>
+  <td class="timeCol">15:00 PDT</td>
+    <td><span class="flag flagsp_usa"></span></td>
+  <td class="matchUp">usa:bol</td>
+    <td><span class="flag flagsp_bol"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">23-Jun-24</td>
+  <td class="timeCol">18:00 PDT</td>
+    <td><span class="flag flagsp_uru"></span></td>
+  <td class="matchUp">uru:pan</td>
+    <td><span class="flag flagsp_pan"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">24-Jun-24</td>
+  <td class="timeCol">18:00 PDT</td>
+    <td><span class="flag flagsp_bra"></span></td>
+  <td class="matchUp">bra:crc</td>
+    <td><span class="flag flagsp_crc"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">24-Jun-24</td>
+  <td class="timeCol">15:00 PDT</td>
+    <td><span class="flag flagsp_col"></span></td>
+  <td class="matchUp">col:par</td>
+    <td><span class="flag flagsp_par"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">25-Jun-24</td>
+  <td class="timeCol">18:00 PDT</td>
+    <td><span class="flag flagsp_chi"></span></td>
+  <td class="matchUp">chi:arg</td>
+    <td><span class="flag flagsp_arg"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">25-Jun-24</td>
+  <td class="timeCol">15:00 PDT</td>
+    <td><span class="flag flagsp_per"></span></td>
+  <td class="matchUp">per:can</td>
+    <td><span class="flag flagsp_can"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">26-Jun-24</td>
+  <td class="timeCol">18:00 PDT</td>
+    <td><span class="flag flagsp_ven"></span></td>
+  <td class="matchUp">ven:mex</td>
+    <td><span class="flag flagsp_mex"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">26-Jun-24</td>
+  <td class="timeCol">15:00 PDT</td>
+    <td><span class="flag flagsp_ecu"></span></td>
+  <td class="matchUp">ecu:jam</td>
+    <td><span class="flag flagsp_jam"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">27-Jun-24</td>
+  <td class="timeCol">15:00 PDT</td>
+    <td><span class="flag flagsp_pan"></span></td>
+  <td class="matchUp">pan:usa</td>
+    <td><span class="flag flagsp_usa"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">27-Jun-24</td>
+  <td class="timeCol">18:00 PDT</td>
+    <td><span class="flag flagsp_uru"></span></td>
+  <td class="matchUp">uru:bol</td>
+    <td><span class="flag flagsp_bol"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">28-Jun-24</td>
+  <td class="timeCol">18:00 PDT</td>
+    <td><span class="flag flagsp_par"></span></td>
+  <td class="matchUp">par:bra</td>
+    <td><span class="flag flagsp_bra"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">28-Jun-24</td>
+  <td class="timeCol">15:00 PDT</td>
+    <td><span class="flag flagsp_col"></span></td>
+  <td class="matchUp">col:crc</td>
+    <td><span class="flag flagsp_crc"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">29-Jun-24</td>
+  <td class="timeCol">17:00 PDT</td>
+    <td><span class="flag flagsp_arg"></span></td>
+  <td class="matchUp">arg:per</td>
+    <td><span class="flag flagsp_per"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">29-Jun-24</td>
+  <td class="timeCol">17:00 PDT</td>
+    <td><span class="flag flagsp_can"></span></td>
+  <td class="matchUp">can:chi</td>
+    <td><span class="flag flagsp_chi"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">30-Jun-24</td>
+  <td class="timeCol">17:00 PDT</td>
+    <td><span class="flag flagsp_mex"></span></td>
+  <td class="matchUp">mex:ecu</td>
+    <td><span class="flag flagsp_ecu"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">30-Jun-24</td>
+  <td class="timeCol">17:00 PDT</td>
+    <td><span class="flag flagsp_jam"></span></td>
+  <td class="matchUp">jam:ven</td>
+    <td><span class="flag flagsp_ven"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">01-Jul-24</td>
+  <td class="timeCol">18:00 PDT</td>
+    <td><span class="flag flagsp_usa"></span></td>
+  <td class="matchUp">usa:uru</td>
+    <td><span class="flag flagsp_uru"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">01-Jul-24</td>
+  <td class="timeCol">18:00 PDT</td>
+    <td><span class="flag flagsp_bol"></span></td>
+  <td class="matchUp">bol:pan</td>
+    <td><span class="flag flagsp_pan"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">02-Jul-24</td>
+  <td class="timeCol">18:00 PDT</td>
+    <td><span class="flag flagsp_bra"></span></td>
+  <td class="matchUp">bra:col</td>
+    <td><span class="flag flagsp_col"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">02-Jul-24</td>
+  <td class="timeCol">18:00 PDT</td>
+    <td><span class="flag flagsp_crc"></span></td>
+  <td class="matchUp">crc:par</td>
+    <td><span class="flag flagsp_par"></span></td>
+    <td class="resultCol">-</td>
+</tr>
+        </tbody>
+      </table>
+  </div>
+
+  <div id="knockoutRounds">
+    <h1>Knockout Rounds</h1>
+      <table class="matches striped">
+<caption>Quarter-finals</caption>
+<thead>
+<tr>
+  <th class="dateCol">Date</th>
+  <th class="timeCol">Time</th>
+  <th></th>
+  <th class="matchUp">Teams</th>
+  <th></th>
+  <th class="resultCol">Result</th>
+</tr>
+</thead>
+        <tbody>
+<tr>
+  <td class="dateCol">04-Jul-24</td>
+  <td class="timeCol">18:00 PDT</td>
+    <td></td>
+  <td class="matchUp">1A:2B</td>
+    <td></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">05-Jul-24</td>
+  <td class="timeCol">18:00 PDT</td>
+    <td></td>
+  <td class="matchUp">1B:2A</td>
+    <td></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">06-Jul-24</td>
+  <td class="timeCol">18:00 PDT</td>
+    <td></td>
+  <td class="matchUp">1C:2D</td>
+    <td></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">06-Jul-24</td>
+  <td class="timeCol">15:00 PDT</td>
+    <td></td>
+  <td class="matchUp">1D:2C</td>
+    <td></td>
+    <td class="resultCol">-</td>
+</tr>
+        </tbody>
+      </table>
+      <table class="matches striped">
+<caption>Semi-finals</caption>
+<thead>
+<tr>
+  <th class="dateCol">Date</th>
+  <th class="timeCol">Time</th>
+  <th></th>
+  <th class="matchUp">Teams</th>
+  <th></th>
+  <th class="resultCol">Result</th>
+</tr>
+</thead>
+        <tbody>
+<tr>
+  <td class="dateCol">09-Jul-24</td>
+  <td class="timeCol">17:00 PDT</td>
+    <td></td>
+  <td class="matchUp">W25:W26</td>
+    <td></td>
+    <td class="resultCol">-</td>
+</tr>
+<tr>
+  <td class="dateCol">10-Jul-24</td>
+  <td class="timeCol">17:00 PDT</td>
+    <td></td>
+  <td class="matchUp">W27:W28</td>
+    <td></td>
+    <td class="resultCol">-</td>
+</tr>
+        </tbody>
+      </table>
+      <table class="matches striped">
+<caption>3rd Place</caption>
+<thead>
+<tr>
+  <th class="dateCol">Date</th>
+  <th class="timeCol">Time</th>
+  <th></th>
+  <th class="matchUp">Teams</th>
+  <th></th>
+  <th class="resultCol">Result</th>
+</tr>
+</thead>
+        <tbody>
+<tr>
+  <td class="dateCol">13-Jul-24</td>
+  <td class="timeCol">17:00 PDT</td>
+    <td></td>
+  <td class="matchUp">L29:L30</td>
+    <td></td>
+    <td class="resultCol">-</td>
+</tr>
+        </tbody>
+      </table>
+      <table class="matches striped">
+<caption>Final</caption>
+<thead>
+<tr>
+  <th class="dateCol">Date</th>
+  <th class="timeCol">Time</th>
+  <th></th>
+  <th class="matchUp">Teams</th>
+  <th></th>
+  <th class="resultCol">Result</th>
+</tr>
+</thead>
+        <tbody>
+<tr>
+  <td class="dateCol">14-Jul-24</td>
+  <td class="timeCol">17:00 PDT</td>
+    <td></td>
+  <td class="matchUp">W29:W30</td>
+    <td></td>
+    <td class="resultCol">-</td>
+</tr>
+        </tbody>
+      </table>
+  </div>
+</div>
+  </div>
+</div>
+
+<div data-role="page" id="groups">
+  <div data-role="header" data-theme="b">
+    <a href="#" data-role="button" data-icon="arrow-l" data-rel="back">Back</a>
+
+    <h1>Group Standings</h1>
+    <a href="../?desktop=true" data-role="button" data-icon="home" rel="external">Desktop</a>
+  </div>
+  <div data-role="content">
+<table class="group">
+  <caption>Group A</caption>
+  <thead>
+  <tr>
+    <th class="teamCol">Team</th>
+    <th class="numCol" title="Matches Played">MP</th>
+    <th class="numCol" title="Wins">W</th>
+    <th class="numCol" title="Draws">D</th>
+    <th class="numCol" title="Losses">L</th>
+    <th class="numCol" title="Goals Scored">GF</th>
+    <th class="numCol" title="Goals Against">GA</th>
+    <th class="numCol" title="Points">Pts</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="teamCol"><span class="flag flagsp_can"></span>can</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+    </tr>
+    <tr>
+      <td class="teamCol"><span class="flag flagsp_arg"></span>arg</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+    </tr>
+    <tr>
+      <td class="teamCol"><span class="flag flagsp_chi"></span>chi</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+    </tr>
+    <tr>
+      <td class="teamCol"><span class="flag flagsp_per"></span>per</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+    </tr>
+  </tbody>
+</table>
+<table class="group">
+  <caption>Group B</caption>
+  <thead>
+  <tr>
+    <th class="teamCol">Team</th>
+    <th class="numCol" title="Matches Played">MP</th>
+    <th class="numCol" title="Wins">W</th>
+    <th class="numCol" title="Draws">D</th>
+    <th class="numCol" title="Losses">L</th>
+    <th class="numCol" title="Goals Scored">GF</th>
+    <th class="numCol" title="Goals Against">GA</th>
+    <th class="numCol" title="Points">Pts</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="teamCol"><span class="flag flagsp_mex"></span>mex</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+    </tr>
+    <tr>
+      <td class="teamCol"><span class="flag flagsp_ecu"></span>ecu</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+    </tr>
+    <tr>
+      <td class="teamCol"><span class="flag flagsp_jam"></span>jam</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+    </tr>
+    <tr>
+      <td class="teamCol"><span class="flag flagsp_ven"></span>ven</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+    </tr>
+  </tbody>
+</table>
+<table class="group">
+  <caption>Group C</caption>
+  <thead>
+  <tr>
+    <th class="teamCol">Team</th>
+    <th class="numCol" title="Matches Played">MP</th>
+    <th class="numCol" title="Wins">W</th>
+    <th class="numCol" title="Draws">D</th>
+    <th class="numCol" title="Losses">L</th>
+    <th class="numCol" title="Goals Scored">GF</th>
+    <th class="numCol" title="Goals Against">GA</th>
+    <th class="numCol" title="Points">Pts</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="teamCol"><span class="flag flagsp_usa"></span>usa</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+    </tr>
+    <tr>
+      <td class="teamCol"><span class="flag flagsp_uru"></span>uru</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+    </tr>
+    <tr>
+      <td class="teamCol"><span class="flag flagsp_pan"></span>pan</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+    </tr>
+    <tr>
+      <td class="teamCol"><span class="flag flagsp_bol"></span>bol</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+    </tr>
+  </tbody>
+</table>
+<table class="group">
+  <caption>Group D</caption>
+  <thead>
+  <tr>
+    <th class="teamCol">Team</th>
+    <th class="numCol" title="Matches Played">MP</th>
+    <th class="numCol" title="Wins">W</th>
+    <th class="numCol" title="Draws">D</th>
+    <th class="numCol" title="Losses">L</th>
+    <th class="numCol" title="Goals Scored">GF</th>
+    <th class="numCol" title="Goals Against">GA</th>
+    <th class="numCol" title="Points">Pts</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="teamCol"><span class="flag flagsp_bra"></span>bra</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+    </tr>
+    <tr>
+      <td class="teamCol"><span class="flag flagsp_par"></span>par</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+    </tr>
+    <tr>
+      <td class="teamCol"><span class="flag flagsp_crc"></span>crc</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+    </tr>
+    <tr>
+      <td class="teamCol"><span class="flag flagsp_col"></span>col</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+      <td class="numCol">0</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+
+<div data-role="page" id="summary">
+  <div data-role="header" data-theme="b">
+    <a href="#" data-role="button" data-icon="arrow-l" data-rel="back">Back</a>
+
+    <h1>Pool Summary</h1>
+    <a href="../../../test?desktop=true" data-role="button" data-icon="home" rel="external">Desktop</a>
+  </div>
+  <div data-role="content">
+<div data-role="collapsible-set" data-theme="c" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+    Pool summary will appear once the tournament has started
+</div>  </div>
+</div>
+</body>
+</html>
