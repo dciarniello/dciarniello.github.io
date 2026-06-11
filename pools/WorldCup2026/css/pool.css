@@ -388,7 +388,12 @@ table.matches {
 	width: 333px;
     }
 
-    .standings .leftColumn, .summary .rightColumn, .matches, .dream {
+    .summary .leftColumn {
+	height: 720px;
+	width: 350px;
+    }
+
+    .standings .leftColumn, .summary .rightColumn, .summary .leftColumn, .matches, .dream {
 	overflow-y: auto;
     }
 }
