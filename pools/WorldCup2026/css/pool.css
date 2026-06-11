@@ -348,6 +348,31 @@ table.matches {
     text-align: right;
 }
 
+#bracket:popover-open {
+    position: fixed;
+    width: 90vw;
+    height: 90vh;
+
+    inset: 0;
+    margin: auto;
+    border: 5px solid cornsilk;
+}
+
+#bracketbutton {
+    display: block;
+    margin-left: auto;
+    margin-right: 150px;
+    height: 25px;
+    margin-top: -25px;
+    background-color: white;
+    color: #0F417C;
+    text-decoration: none; /* Removes underline */
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
 @media screen and (min-device-width:801px) {
     .standings .leftColumn {
 	height: 500px;
