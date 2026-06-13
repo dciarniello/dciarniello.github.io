@@ -40311,7 +40311,8 @@
     <button popovertarget="bracket" id="bracketbutton">View Bracket</button>
 <button popovertarget="bracket" id="bracketbutton">View Bracket</button>
 <div popover id="bracket">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1200" width="100%" height="100%"
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1200" width="100%" height="100%"
      style="background-color: #0c1a30; font-family: 'Segoe UI', -apple-system, sans-serif;">
     <defs>
         <!-- Card and Glow Styles -->
@@ -40330,6 +40331,27 @@
         <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
             <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
         </filter>
+        <mask id="flagmaskL1" mask-type="alpha">
+            <rect x="40" y="18" width="19" height="12"/>
+        </mask>
+        <mask id="flagmaskL2" mask-type="alpha">
+            <rect x="40" y="43" width="19" height="12"/>
+        </mask>
+        <mask id="flagmaskR1" mask-type="alpha">
+            <rect x="8" y="17" width="19" height="12"/>
+        </mask>
+        <mask id="flagmaskR2" mask-type="alpha">
+            <rect x="8" y="43" width="19" height="12"/>
+        </mask>
+        <mask id="flagmaskC2" mask-type="alpha">
+            <rect x="8" y="60" width="19" height="12"/>
+        </mask>
+        <mask id="flagmaskTP1" mask-type="alpha">
+            <rect x="8" y="10" width="19" height="12"/>
+        </mask>
+        <mask id="flagmaskTP2" mask-type="alpha">
+            <rect x="8" y="39" width="19" height="12"/>
+        </mask>
     </defs>
 
     <foreignObject x="2350" y="5" width="100" height="50">
@@ -40367,135 +40389,135 @@
     <!-- CONNECTOR LINES: LEFT -->
     <g fill="none" stroke="#223e63" stroke-width="2">
         <!-- R32 to R16 -->
-            <path d="M 250,205 H 310 V 260 H 360 M 250,315 H 310 V 260 M 250,425 H 310 V 480 H 360 M 250,535 H 310 V 480"/>
-            <path d="M 250,645 H 310 V 700 H 360 M 250,755 H 310 V 700 M 250,865 H 310 V 920 H 360 M 250,975 H 310 V 920"/>
+            <path d="M 275,205 H 310 V 260 H 360 M 275,315 H 310 V 260 M 275,425 H 310 V 480 H 360 M 275,535 H 310 V 480"/>
+            <path d="M 275,645 H 310 V 700 H 360 M 275,755 H 310 V 700 M 275,865 H 310 V 920 H 360 M 275,975 H 310 V 920"/>
 
         <!-- R16 to QF -->
-        <path d="M 510,260 H 580 V 370 H 640 M 510,480 H 580 V 370"/>
-        <path d="M 510,700 H 580 V 810 H 640 M 510,920 H 580 V 810"/>
+        <path d="M 535,260 H 580 V 370 H 640 M 535,480 H 580 V 370"/>
+        <path d="M 535,700 H 580 V 810 H 640 M 535,920 H 580 V 810"/>
 
         <!-- QF to SF -->
-        <path d="M 790,370 H 860 V 590 H 920 M 790,810 H 860 V 590"/>
+        <path d="M 815,370 H 860 V 590 H 920 M 815,810 H 860 V 590"/>
 
         <!-- SF to Final -->
-        <path d="M 1070,590 H 1120"/>
+        <path d="M 1095,590 H 1120"/>
     </g>
 
     <!-- ROUND OF 32: LEFT -->
-    <!-- Group 1 -->
+        <!-- Group 1 -->
 <g transform="translate(100, 170)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
   <path d="M 32,0 V 70" stroke="#223e63"/>
   <text x="16" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">74</text>
-  <text x="74" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">1E</text>
-  <text x="74" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">3ABCDF</text>
+    <text x="40" y="28" font-size="18" fill="#fff" font-weight="600">1E</text>
+    <text x="40" y="54" font-size="18" fill="#fff" font-weight="600">3ABCDF</text>
 </g>
 <g transform="translate(100, 280)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
   <path d="M 32,0 V 70" stroke="#223e63"/>
   <text x="16" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">77</text>
-  <text x="74" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">1I</text>
-  <text x="74" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">3CDFGH</text>
+    <text x="40" y="28" font-size="18" fill="#fff" font-weight="600">1I</text>
+    <text x="40" y="54" font-size="18" fill="#fff" font-weight="600">3CDFGH</text>
 </g>
-    <!-- Group 2 -->
+        <!-- Group 2 -->
 <g transform="translate(100, 390)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
   <path d="M 32,0 V 70" stroke="#223e63"/>
   <text x="16" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">73</text>
-  <text x="74" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">2A</text>
-  <text x="74" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">2B</text>
+    <text x="40" y="28" font-size="18" fill="#fff" font-weight="600">2A</text>
+    <text x="40" y="54" font-size="18" fill="#fff" font-weight="600">2B</text>
 </g>
 <g transform="translate(100, 500)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
   <path d="M 32,0 V 70" stroke="#223e63"/>
   <text x="16" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">75</text>
-  <text x="74" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">1F</text>
-  <text x="74" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">2C</text>
+    <text x="40" y="28" font-size="18" fill="#fff" font-weight="600">1F</text>
+    <text x="40" y="54" font-size="18" fill="#fff" font-weight="600">2C</text>
 </g>
-    <!-- Group 3 -->
+        <!-- Group 3 -->
 <g transform="translate(100, 610)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
   <path d="M 32,0 V 70" stroke="#223e63"/>
   <text x="16" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">83</text>
-  <text x="74" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">2K</text>
-  <text x="74" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">2L</text>
+    <text x="40" y="28" font-size="18" fill="#fff" font-weight="600">2K</text>
+    <text x="40" y="54" font-size="18" fill="#fff" font-weight="600">2L</text>
 </g>
 <g transform="translate(100, 720)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
   <path d="M 32,0 V 70" stroke="#223e63"/>
   <text x="16" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">84</text>
-  <text x="74" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">1H</text>
-  <text x="74" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">2J</text>
+    <text x="40" y="28" font-size="18" fill="#fff" font-weight="600">1H</text>
+    <text x="40" y="54" font-size="18" fill="#fff" font-weight="600">2J</text>
 </g>
-    <!-- Group 4 -->
+        <!-- Group 4 -->
 <g transform="translate(100, 830)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
   <path d="M 32,0 V 70" stroke="#223e63"/>
   <text x="16" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">81</text>
-  <text x="74" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">1D</text>
-  <text x="74" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">3BEFIJ</text>
+    <text x="40" y="28" font-size="18" fill="#fff" font-weight="600">1D</text>
+    <text x="40" y="54" font-size="18" fill="#fff" font-weight="600">3BEFIJ</text>
 </g>
 <g transform="translate(100, 940)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
   <path d="M 32,0 V 70" stroke="#223e63"/>
   <text x="16" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">82</text>
-  <text x="74" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">1G</text>
-  <text x="74" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">3AEHIJ</text>
+    <text x="40" y="28" font-size="18" fill="#fff" font-weight="600">1G</text>
+    <text x="40" y="54" font-size="18" fill="#fff" font-weight="600">3AEHIJ</text>
 </g>
 
     <!-- ROUND OF 16: LEFT -->
 <g transform="translate(360, 225)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
   <path d="M 32,0 V 70" stroke="#223e63"/>
   <text x="16" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">89</text>
-  <text x="74" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W74</text>
-  <text x="74" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W77</text>
+    <text x="40" y="28" font-size="18" fill="#fff" font-weight="600">W74</text>
+    <text x="40" y="54" font-size="18" fill="#fff" font-weight="600">W77</text>
 </g>
 <g transform="translate(360, 445)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
   <path d="M 32,0 V 70" stroke="#223e63"/>
   <text x="16" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">90</text>
-  <text x="74" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W73</text>
-  <text x="74" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W75</text>
+    <text x="40" y="28" font-size="18" fill="#fff" font-weight="600">W73</text>
+    <text x="40" y="54" font-size="18" fill="#fff" font-weight="600">W75</text>
 </g>
 <g transform="translate(360, 665)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
   <path d="M 32,0 V 70" stroke="#223e63"/>
   <text x="16" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">93</text>
-  <text x="74" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W83</text>
-  <text x="74" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W84</text>
+    <text x="40" y="28" font-size="18" fill="#fff" font-weight="600">W83</text>
+    <text x="40" y="54" font-size="18" fill="#fff" font-weight="600">W84</text>
 </g>
 <g transform="translate(360, 885)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
   <path d="M 32,0 V 70" stroke="#223e63"/>
   <text x="16" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">94</text>
-  <text x="74" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W81</text>
-  <text x="74" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W82</text>
+    <text x="40" y="28" font-size="18" fill="#fff" font-weight="600">W81</text>
+    <text x="40" y="54" font-size="18" fill="#fff" font-weight="600">W82</text>
 </g>
 
     <!-- QUARTERFINALS: LEFT -->
 <g transform="translate(640, 335)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
   <path d="M 32,0 V 70" stroke="#223e63"/>
   <text x="16" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">97</text>
-  <text x="74" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W89</text>
-  <text x="74" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W90</text>
+    <text x="40" y="28" font-size="18" fill="#fff" font-weight="600">W89</text>
+    <text x="40" y="54" font-size="18" fill="#fff" font-weight="600">W90</text>
 </g>
 <g transform="translate(640, 775)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
   <path d="M 32,0 V 70" stroke="#223e63"/>
   <text x="16" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">98</text>
-  <text x="74" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W93</text>
-  <text x="74" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W94</text>
+    <text x="40" y="28" font-size="18" fill="#fff" font-weight="600">W93</text>
+    <text x="40" y="54" font-size="18" fill="#fff" font-weight="600">W94</text>
 </g>
 
     <!-- SEMIFINALS: LEFT -->
 <g transform="translate(920, 555)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
   <path d="M 32,0 V 70" stroke="#223e63"/>
   <text x="16" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">101</text>
-  <text x="74" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W97</text>
-  <text x="74" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W98</text>
+    <text x="40" y="28" font-size="18" fill="#fff" font-weight="600">W97</text>
+    <text x="40" y="54" font-size="18" fill="#fff" font-weight="600">W98</text>
 </g>
 
     <!-- ========================================== -->
@@ -40505,135 +40527,135 @@
     <!-- CONNECTOR LINES: RIGHT -->
     <g fill="none" stroke="#223e63" stroke-width="2">
         <!-- R32 to R16 -->
-            <path d="M 2150,205 H 2090 V 260 H 2040 M 2150,315 H 2090 V 260 M 2150,425 H 2090 V 480 H 2040 M 2150,535 H 2090 V 480"/>
-            <path d="M 2150,645 H 2090 V 700 H 2040 M 2150,755 H 2090 V 700 M 2150,865 H 2090 V 920 H 2040 M 2150,975 H 2090 V 920"/>
+            <path d="M 2125,205 H 2090 V 260 H 2040 M 2125,315 H 2090 V 260 M 2125,425 H 2090 V 480 H 2040 M 2125,535 H 2090 V 480"/>
+            <path d="M 2125,645 H 2090 V 700 H 2040 M 2125,755 H 2090 V 700 M 2125,865 H 2090 V 920 H 2040 M 2125,975 H 2090 V 920"/>
 
         <!-- R16 to QF -->
-        <path d="M 1890,260 H 1820 V 370 H 1760 M 1890,480 H 1820 V 370"/>
-        <path d="M 1890,700 H 1820 V 810 H 1760 M 1890,920 H 1820 V 810"/>
+        <path d="M 1865,260 H 1820 V 370 H 1760 M 1865,480 H 1820 V 370"/>
+        <path d="M 1865,700 H 1820 V 810 H 1760 M 1865,920 H 1820 V 810"/>
 
         <!-- QF to SF -->
-        <path d="M 1610,370 H 1540 V 590 H 1480 M 1610,810 H 1540 V 590"/>
+        <path d="M 1585,370 H 1540 V 590 H 1480 M 1585,810 H 1540 V 590"/>
 
         <!-- SF to Final -->
-        <path d="M 1330,590 H 1280"/>
+        <path d="M 1305,590 H 1280"/>
     </g>
 
     <!-- ROUND OF 32: RIGHT -->
-    <!-- Group 5 -->
-<g transform="translate(2150, 170)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
-  <path d="M 118,0 V 70" stroke="#223e63"/>
-  <text x="136" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">76</text>
-  <text x="42" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">1C</text>
-  <text x="42" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">2F</text>
+        <!-- Group 5 -->
+<g transform="translate(2125, 170)" filter="url(#shadow)">
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <path d="M 143,0 V 70" stroke="#223e63"/>
+  <text x="161" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">76</text>
+    <text x="8" y="28" font-size="18" fill="#fff" font-weight="600">1C</text>
+    <text x="8" y="54" font-size="18" fill="#fff" font-weight="600">2F</text>
 </g>
-<g transform="translate(2150, 280)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
-  <path d="M 118,0 V 70" stroke="#223e63"/>
-  <text x="136" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">78</text>
-  <text x="42" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">2E</text>
-  <text x="42" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">2I</text>
+<g transform="translate(2125, 280)" filter="url(#shadow)">
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <path d="M 143,0 V 70" stroke="#223e63"/>
+  <text x="161" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">78</text>
+    <text x="8" y="28" font-size="18" fill="#fff" font-weight="600">2E</text>
+    <text x="8" y="54" font-size="18" fill="#fff" font-weight="600">2I</text>
 </g>
-    <!-- Group 6 -->
-<g transform="translate(2150, 390)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
-  <path d="M 118,0 V 70" stroke="#223e63"/>
-  <text x="136" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">79</text>
-  <text x="42" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">1A</text>
-  <text x="42" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">3CEFHI</text>
+        <!-- Group 6 -->
+<g transform="translate(2125, 390)" filter="url(#shadow)">
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <path d="M 143,0 V 70" stroke="#223e63"/>
+  <text x="161" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">79</text>
+    <text x="8" y="28" font-size="18" fill="#fff" font-weight="600">1A</text>
+    <text x="8" y="54" font-size="18" fill="#fff" font-weight="600">3CEFHI</text>
 </g>
-<g transform="translate(2150, 500)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
-  <path d="M 118,0 V 70" stroke="#223e63"/>
-  <text x="136" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">80</text>
-  <text x="42" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">1L</text>
-  <text x="42" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">3EHIJK</text>
+<g transform="translate(2125, 500)" filter="url(#shadow)">
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <path d="M 143,0 V 70" stroke="#223e63"/>
+  <text x="161" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">80</text>
+    <text x="8" y="28" font-size="18" fill="#fff" font-weight="600">1L</text>
+    <text x="8" y="54" font-size="18" fill="#fff" font-weight="600">3EHIJK</text>
 </g>
-    <!-- Group 7 -->
-<g transform="translate(2150, 610)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
-  <path d="M 118,0 V 70" stroke="#223e63"/>
-  <text x="136" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">86</text>
-  <text x="42" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">1J</text>
-  <text x="42" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">2H</text>
+        <!-- Group 7 -->
+<g transform="translate(2125, 610)" filter="url(#shadow)">
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <path d="M 143,0 V 70" stroke="#223e63"/>
+  <text x="161" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">86</text>
+    <text x="8" y="28" font-size="18" fill="#fff" font-weight="600">1J</text>
+    <text x="8" y="54" font-size="18" fill="#fff" font-weight="600">2H</text>
 </g>
-<g transform="translate(2150, 720)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
-  <path d="M 118,0 V 70" stroke="#223e63"/>
-  <text x="136" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">88</text>
-  <text x="42" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">2D</text>
-  <text x="42" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">2G</text>
+<g transform="translate(2125, 720)" filter="url(#shadow)">
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <path d="M 143,0 V 70" stroke="#223e63"/>
+  <text x="161" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">88</text>
+    <text x="8" y="28" font-size="18" fill="#fff" font-weight="600">2D</text>
+    <text x="8" y="54" font-size="18" fill="#fff" font-weight="600">2G</text>
 </g>
-    <!-- Group 8 -->
-<g transform="translate(2150, 830)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
-  <path d="M 118,0 V 70" stroke="#223e63"/>
-  <text x="136" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">85</text>
-  <text x="42" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">1B</text>
-  <text x="42" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">3EFGIJ</text>
+        <!-- Group 8 -->
+<g transform="translate(2125, 830)" filter="url(#shadow)">
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <path d="M 143,0 V 70" stroke="#223e63"/>
+  <text x="161" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">85</text>
+    <text x="8" y="28" font-size="18" fill="#fff" font-weight="600">1B</text>
+    <text x="8" y="54" font-size="18" fill="#fff" font-weight="600">3EFGIJ</text>
 </g>
-<g transform="translate(2150, 940)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
-  <path d="M 118,0 V 70" stroke="#223e63"/>
-  <text x="136" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">87</text>
-  <text x="42" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">1K</text>
-  <text x="42" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">3DEIJL</text>
+<g transform="translate(2125, 940)" filter="url(#shadow)">
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <path d="M 143,0 V 70" stroke="#223e63"/>
+  <text x="161" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">87</text>
+    <text x="8" y="28" font-size="18" fill="#fff" font-weight="600">1K</text>
+    <text x="8" y="54" font-size="18" fill="#fff" font-weight="600">3DEIJL</text>
 </g>
 
     <!-- ROUND OF 16: RIGHT -->
-<g transform="translate(1890, 225)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
-  <path d="M 118,0 V 70" stroke="#223e63"/>
-  <text x="136" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">91</text>
-  <text x="42" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W76</text>
-  <text x="42" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W78</text>
+<g transform="translate(1865, 225)" filter="url(#shadow)">
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <path d="M 143,0 V 70" stroke="#223e63"/>
+  <text x="161" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">91</text>
+    <text x="8" y="28" font-size="18" fill="#fff" font-weight="600">W76</text>
+    <text x="8" y="54" font-size="18" fill="#fff" font-weight="600">W78</text>
 </g>
-<g transform="translate(1890, 445)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
-  <path d="M 118,0 V 70" stroke="#223e63"/>
-  <text x="136" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">92</text>
-  <text x="42" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W79</text>
-  <text x="42" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W80</text>
+<g transform="translate(1865, 445)" filter="url(#shadow)">
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <path d="M 143,0 V 70" stroke="#223e63"/>
+  <text x="161" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">92</text>
+    <text x="8" y="28" font-size="18" fill="#fff" font-weight="600">W79</text>
+    <text x="8" y="54" font-size="18" fill="#fff" font-weight="600">W80</text>
 </g>
-<g transform="translate(1890, 665)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
-  <path d="M 118,0 V 70" stroke="#223e63"/>
-  <text x="136" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">95</text>
-  <text x="42" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W86</text>
-  <text x="42" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W88</text>
+<g transform="translate(1865, 665)" filter="url(#shadow)">
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <path d="M 143,0 V 70" stroke="#223e63"/>
+  <text x="161" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">95</text>
+    <text x="8" y="28" font-size="18" fill="#fff" font-weight="600">W86</text>
+    <text x="8" y="54" font-size="18" fill="#fff" font-weight="600">W88</text>
 </g>
-<g transform="translate(1890, 885)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
-  <path d="M 118,0 V 70" stroke="#223e63"/>
-  <text x="136" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">96</text>
-  <text x="42" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W85</text>
-  <text x="42" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W87</text>
+<g transform="translate(1865, 885)" filter="url(#shadow)">
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <path d="M 143,0 V 70" stroke="#223e63"/>
+  <text x="161" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">96</text>
+    <text x="8" y="28" font-size="18" fill="#fff" font-weight="600">W85</text>
+    <text x="8" y="54" font-size="18" fill="#fff" font-weight="600">W87</text>
 </g>
 
     <!-- QUARTERFINALS: RIGHT -->
-<g transform="translate(1610, 335)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
-  <path d="M 118,0 V 70" stroke="#223e63"/>
-  <text x="136" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">99</text>
-  <text x="42" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W91</text>
-  <text x="42" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W92</text>
+<g transform="translate(1585, 335)" filter="url(#shadow)">
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <path d="M 143,0 V 70" stroke="#223e63"/>
+  <text x="161" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">99</text>
+    <text x="8" y="28" font-size="18" fill="#fff" font-weight="600">W91</text>
+    <text x="8" y="54" font-size="18" fill="#fff" font-weight="600">W92</text>
 </g>
-<g transform="translate(1610, 775)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
-  <path d="M 118,0 V 70" stroke="#223e63"/>
-  <text x="136" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">100</text>
-  <text x="42" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W95</text>
-  <text x="42" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W96</text>
+<g transform="translate(1585, 775)" filter="url(#shadow)">
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <path d="M 143,0 V 70" stroke="#223e63"/>
+  <text x="161" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">100</text>
+    <text x="8" y="28" font-size="18" fill="#fff" font-weight="600">W95</text>
+    <text x="8" y="54" font-size="18" fill="#fff" font-weight="600">W96</text>
 </g>
 
     <!-- SEMIFINALS: RIGHT -->
-<g transform="translate(1330, 555)" filter="url(#shadow)">
-  <rect width="150" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
-  <path d="M 118,0 V 70" stroke="#223e63"/>
-  <text x="136" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">102</text>
-  <text x="42" y="28" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W99</text>
-  <text x="42" y="54" font-size="16" fill="#fff" font-weight="600" font-variant="small-caps">W100</text>
+<g transform="translate(1305, 555)" filter="url(#shadow)">
+  <rect width="175" height="70" rx="4" fill="url(#boxGrad)" stroke="#223e63"/>
+  <path d="M 143,0 V 70" stroke="#223e63"/>
+  <text x="161" y="41" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">102</text>
+    <text x="8" y="28" font-size="18" fill="#fff" font-weight="600">W99</text>
+    <text x="8" y="54" font-size="18" fill="#fff" font-weight="600">W100</text>
 </g>
 
     <!-- ========================================== -->
@@ -40644,36 +40666,26 @@
     <g transform="translate(1120, 545)" filter="url(#shadow)">
         <rect width="160" height="90" rx="6" fill="url(#finalGrad)" stroke="#8a1538" stroke-width="1.5"/>
         <line x1="0" y1="45" x2="160" y2="45" stroke="#4a0b1e" stroke-width="1"/>
-        <text x="15" y="28" font-size="17" font-weight="700" fill="#fff" font-variant="small-caps">
-W101            </text>
-            <text x="15" y="71" font-size="17" font-weight="700" fill="#fff" font-variant="small-caps">
-W102            </text>
-            </g>
+            <text x="15" y="28" font-size="20" font-weight="700" fill="#fff">W101</text>
+            <text x="15" y="71" font-size="20" font-weight="700" fill="#fff">W102</text>
+    </g>
 
             <!-- TROPHY CHAMPION RECEPTACLE -->
-            <g transform="translate(1100, 690)" filter="url(#shadow)">
-            <rect width="200" height="55" rx="27.5" fill="url(#goldGrad)" stroke="#fff" stroke-width="1.5"/>
-            <text x="100" y="22" font-size="10" font-weight="800" fill="
-                #5c0e25" text-anchor="middle" letter-spacing="2">
-            CHAMPION
-            </text>
-            <text x="100" y="42" font-size="20" font-weight="800" fill="#0c1a30" text-anchor="middle">
-?        </text>
+    <g transform="translate(1100, 690)" filter="url(#shadow)">
+        <rect width="200" height="55" rx="27.5" fill="url(#goldGrad)" stroke="#fff" stroke-width="1.5"/>
+        <text x="100" y="22" font-size="10" font-weight="800" fill="#5c0e25" text-anchor="middle" letter-spacing="2">CHAMPION</text>
+        <text x="100" y="42" font-size="20" font-weight="800" fill="#0c1a30" text-anchor="middle">?</text>
     </g>
     <line x1="1200" y1="635" x2="1200" y2="690" stroke="#8a1538" stroke-width="2" stroke-dasharray="4 4"/>
 
     <!-- THIRD PLACE MATCH -->
-<g transform="translate(1120, 800)" filter="url(#shadow)">
-    <rect width="160" height="60" rx="4" fill="#112035" stroke="#1d3554"/>
-    <line x1="0" y1="30" x2="160" y2="30" stroke="#1d3554"/>
-    <text x="80" y="-10" font-size="11" font-weight="700" fill="#6b7c96" text-anchor="middle" letter-spacing="1">THIRD
-        PLACE
-    </text>
-<text x="15" y="20" font-size="13" fill="#a2b4cd" font-variant="small-caps">
-L101</text>
-<text x="15" y="50" font-size="13" fill="#a2b4cd" font-variant="small-caps">
-L102</text>
-</g>
+    <g transform="translate(1120, 800)" filter="url(#shadow)">
+        <rect width="160" height="60" rx="4" fill="#112035" stroke="#1d3554"/>
+        <line x1="0" y1="30" x2="160" y2="30" stroke="#1d3554"/>
+        <text x="80" y="-10" font-size="11" font-weight="700" fill="#6b7c96" text-anchor="middle" letter-spacing="1">THIRD PLACE</text>
+            <text x="15" y="20" font-size="13" fill="#a2b4cd">L101</text>
+            <text x="15" y="50" font-size="13" fill="#a2b4cd">L102</text>
+    </g>
 </svg>
 </div>
       <table class="matches striped">
@@ -52679,7 +52691,7 @@ L102</text>
   </div>
 </div></div>
 <div id="footer">
-  <p>Last updated: Jun 12, 2026, 8:03:01 PM</p>
+  <p>Last updated: Jun 12, 2026, 10:34:49 PM</p>
 
   <p>Webmaster: <a href="mailto:danny@ciarniello.ca">Danny Ciarniello</a></p>
 </div>
