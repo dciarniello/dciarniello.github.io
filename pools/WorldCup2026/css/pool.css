@@ -219,7 +219,17 @@ caption {
 }
 
 .striped tbody tr:nth-child(odd) {
-    background-color: #5BC6F2; /* light orange */
+    background-color: #5BC6F2;
+}
+
+.dreamTeam table {
+	border-collapse: collapse;
+}
+
+.dreamTeam .striped {
+    tbody tr:nth-child(3n):not(:last-child) {
+	border-bottom: 2pt solid black;
+    }
 }
 
 table {
