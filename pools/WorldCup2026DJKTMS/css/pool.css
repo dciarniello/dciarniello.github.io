@@ -196,6 +196,11 @@ caption {
     display: none;
 }
 
+.playing {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
 .dreamTeam table {
     width: 275px;
 }

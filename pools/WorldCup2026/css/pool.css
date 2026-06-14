@@ -196,6 +196,11 @@ caption {
     display: none;
 }
 
+.playing {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
 .dreamTeam table {
     width: 275px;
 }
@@ -227,7 +232,7 @@ caption {
 }
 
 .dreamTeam .striped {
-    tbody tr:nth-child(3n):not(:last-child) {
+    tbody tr:nth-child(3n):not(:last-child){
 	border-bottom: 2pt solid black;
     }
 }
@@ -407,3 +412,4 @@ table.matches {
 	overflow-y: auto;
     }
 }
+
