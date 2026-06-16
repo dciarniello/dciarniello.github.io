@@ -363,6 +363,11 @@ table.matches {
     text-align: right;
 }
 
+.dreamTeam .tieValue {
+    text-align: center;
+    width: 10%;
+}
+
 #bracket:popover-open {
     position: fixed;
     width: 90vw;
