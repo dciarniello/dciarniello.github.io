@@ -89,3 +89,8 @@ td.matchUp {
 .eliminated {
   color: #A0A0A0; /* lightgrey */
 }
+
+.playing {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
